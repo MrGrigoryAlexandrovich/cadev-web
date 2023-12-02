@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@radix-ui/themes/styles.css";
-import MainLayout from "./MainLayout";
+import Layout from "./components/Layout";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <MainLayout page={children} />
+        <Layout page={children} />
       </body>
     </html>
   );

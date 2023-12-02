@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <Flex direction="row" gap="5" mt="5">
         <Link>Hello</Link>
-        <Button variant="solid">Let's go</Button>
+        <Button variant="soft">Let's go</Button>
       </Flex>
     </main>
   );
