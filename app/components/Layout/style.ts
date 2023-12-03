@@ -1,6 +1,5 @@
 import { Stack } from "@mui/material";
 import { styled } from "@mui/system";
-import { Separator } from "@radix-ui/themes";
 
 export const StyledLayoutContainer = styled(Stack)({
   display: "flex",

@@ -108,7 +108,7 @@ export default function LayoutComponent({ page }: ILayoutComponent) {
                   </Stack>
                   <Stack
                     py={desktop ? 0 : 3}
-                    width="99%"
+                    width="100%"
                     height={"fit-content"}
                   >
                     <Stack

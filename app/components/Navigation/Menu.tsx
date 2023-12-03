@@ -45,9 +45,9 @@ export default function Menu({
         "& .MuiPaper-root": {
           width: mobileDrawerOpen ? "100%" : "auto",
           animation: animationCheck(),
-          background: "transparent !important",
+          background: desktop ? "transparent" : "#131E30",
           overflow: "visible",
-          color: "inherit",
+          color: desktop ? "inherit" : "#fff",
           borderRight: "1.5px solid gray",
         },
       }}
