@@ -2,7 +2,7 @@
 
 import React, { Suspense, useState } from "react";
 import { ThemeProvider } from "next-themes";
-import { Theme, Text, Separator } from "@radix-ui/themes";
+import { Theme, Text } from "@radix-ui/themes";
 import { Stack } from "@mui/material";
 import i18n from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
@@ -11,11 +11,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import Menu from "../Navigation/Menu";
-import {
-  StyledLayoutContainer,
-  StyledMobileNavigationHeader,
-  StyledContentSeparator,
-} from "./style";
+import { StyledLayoutContainer, StyledMobileNavigationHeader } from "./style";
 import { ILayoutComponent } from "@/app/models/Layout";
 import { translationEn } from "../../translation/english";
 import { translationBs } from "../../translation/bosnish";
@@ -96,7 +92,7 @@ export default function LayoutComponent({ page }: ILayoutComponent) {
                 >
                   <Stack
                     height="100%"
-                    width={drawerOpen ? 214 : 77}
+                    width={drawerOpen ? 248 : 80}
                     display={mobileDrawerOpen || desktop ? "block" : "none"}
                   >
                     <Menu
@@ -112,7 +108,7 @@ export default function LayoutComponent({ page }: ILayoutComponent) {
                   </Stack>
                   <Stack
                     py={desktop ? 0 : 3}
-                    width={"100%"}
+                    width="99%"
                     height={"fit-content"}
                   >
                     <Stack
@@ -133,7 +129,8 @@ export default function LayoutComponent({ page }: ILayoutComponent) {
                           </Stack>
                         </Stack>
                       )}
-                      <Stack px={6}>{page}</Stack>
+
+                      <Stack px={desktop ? 6 : 0}>{page}</Stack>
                     </Stack>
                   </Stack>
                 </Stack>

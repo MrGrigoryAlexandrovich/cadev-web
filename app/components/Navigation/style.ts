@@ -2,11 +2,9 @@ import { Stack, Drawer } from "@mui/material";
 import { Flex } from "@radix-ui/themes";
 import { styled } from "@mui/system";
 
-export const StyledDesktopNavigationMenuContainer = styled(Stack)({
+export const StyledDesktopNavigationMenuContainer = styled(Drawer)({
   position: "relative",
   height: "100%",
-  borderRight: "1.75px solid gray",
-  overflow: "visible",
   "& svg": {
     width: 24,
     height: 24,

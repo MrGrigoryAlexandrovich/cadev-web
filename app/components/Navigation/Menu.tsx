@@ -39,10 +39,16 @@ export default function Menu({
 
   return (
     <StyledDesktopNavigationMenuContainer
+      anchor={"left"}
+      variant="permanent"
       sx={{
         "& .MuiPaper-root": {
           width: mobileDrawerOpen ? "100%" : "auto",
           animation: animationCheck(),
+          background: "transparent !important",
+          overflow: "visible",
+          color: "inherit",
+          borderRight: "1.5px solid gray",
         },
       }}
     >

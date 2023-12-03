@@ -26,8 +26,3 @@ export const StyledMobileNavigationHeader = styled(Stack)({
   backgroundColor: "#131E30",
   animation: "fade-in 1s ease-in-out",
 });
-
-export const StyledContentSeparator = styled(Separator)({
-  width: "100%",
-  height: 1.75,
-});
