@@ -111,9 +111,7 @@ export default function LayoutComponent({ page }: ILayoutComponent) {
                     />
                   </Stack>
                   <Stack
-                    margin={desktop ? "38px auto" : 0}
                     py={desktop ? 0 : 3}
-                    maxWidth={1128}
                     width={"100%"}
                     height={"fit-content"}
                   >
@@ -123,9 +121,19 @@ export default function LayoutComponent({ page }: ILayoutComponent) {
                         animation: "fade-in 3.5s ease-in-out",
                       }}
                     >
-                      {desktop && <Text>{generateTitle()}</Text>}
-                      <StyledContentSeparator />
-                      {page}
+                      {desktop && (
+                        <Stack
+                          width="100%"
+                          height={64}
+                          justifyContent="center"
+                          borderBottom="1.5px solid gray"
+                        >
+                          <Stack px={6} fontSize={24}>
+                            <Text>{generateTitle()}</Text>
+                          </Stack>
+                        </Stack>
+                      )}
+                      <Stack px={6}>{page}</Stack>
                     </Stack>
                   </Stack>
                 </Stack>
