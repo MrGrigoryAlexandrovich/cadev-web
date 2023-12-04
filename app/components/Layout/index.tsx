@@ -1,11 +1,8 @@
 "use client";
 
 import React, { Suspense, useState } from "react";
-import { ThemeProvider } from "next-themes";
 import { Theme, Text } from "@radix-ui/themes";
 import { Stack } from "@mui/material";
-import i18n from "i18next";
-import { initReactI18next, useTranslation } from "react-i18next";
 import { usePathname } from "next/navigation";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
@@ -13,23 +10,10 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import Menu from "../Navigation/Menu";
 import { StyledLayoutContainer, StyledMobileNavigationHeader } from "./style";
 import { ILayoutComponent } from "@/app/models/Layout";
-import { translationEn } from "../../translation/english";
-import { translationBs } from "../../translation/bosnish";
-
-i18n.use(initReactI18next).init({
-  resources: {
-    en_US: { translation: translationEn },
-    ba_BS: { translation: translationBs },
-  },
-  lng: "en_US",
-  fallbackLng: "en_US",
-  interpolation: { escapeValue: false },
-});
 
 export default function LayoutComponent({ page }: ILayoutComponent) {
   const pathname = usePathname();
   const theme = useTheme();
-  const { t } = useTranslation();
   const mobile = useMediaQuery(theme.breakpoints.down("sm"));
   const desktop = useMediaQuery(theme.breakpoints.up("sm"));
   const deviceLoaded = desktop || mobile;
@@ -41,15 +25,15 @@ export default function LayoutComponent({ page }: ILayoutComponent) {
   const generateTitle = () => {
     switch (pathname) {
       case "/":
-        return t("navigation.home");
+        return "Home";
       case "/resume":
-        return t("navigation.resume");
-      case "/tools":
-        return t("navigation.tools");
+        return "Resume";
+      case "/services":
+        return "Servies";
       case "/projects":
-        return t("navigation.projects");
+        return "Projects";
       case "/contact":
-        return t("navigation.contact");
+        return "Contact";
       // no default
     }
   };
@@ -65,80 +49,74 @@ export default function LayoutComponent({ page }: ILayoutComponent) {
 
   return (
     <Suspense fallback={"Loading..."}>
-      <ThemeProvider attribute="class">
-        <Theme accentColor="blue" radius="medium">
-          {deviceLoaded && (
-            <Stack>
-              {mobile && (
-                <StyledMobileNavigationHeader>
-                  <Text>{generateTitle()}</Text>
-                  <MenuOutlinedIcon
-                    cursor="pointer"
-                    sx={{
-                      color: "#178CF2",
-                    }}
-                    onClick={() => {
-                      setMobileDrawerOpen(true);
-                      setDrawerOpen(true);
-                    }}
-                  />
-                </StyledMobileNavigationHeader>
-              )}
-              <StyledLayoutContainer>
+      <Theme appearance="dark" accentColor="blue" radius="medium">
+        {deviceLoaded && (
+          <Stack>
+            {mobile && (
+              <StyledMobileNavigationHeader>
+                <Text>{generateTitle()}</Text>
+                <MenuOutlinedIcon
+                  cursor="pointer"
+                  sx={{
+                    color: "#178CF2",
+                  }}
+                  onClick={() => {
+                    setMobileDrawerOpen(true);
+                    setDrawerOpen(true);
+                  }}
+                />
+              </StyledMobileNavigationHeader>
+            )}
+            <StyledLayoutContainer>
+              <Stack
+                direction={desktop ? "row" : "column"}
+                mx={mobile ? 3 : 0}
+                width="100vw"
+              >
                 <Stack
-                  direction={desktop ? "row" : "column"}
-                  mx={mobile ? 3 : 0}
-                  width="100vw"
+                  height="100%"
+                  width={drawerOpen ? 248 : 80}
+                  display={mobileDrawerOpen || desktop ? "block" : "none"}
                 >
+                  <Menu
+                    open={drawerOpen}
+                    mobileDrawerOpen={mobileDrawerOpen}
+                    desktop={desktop}
+                    mobile={mobile}
+                    isMobleDrawerClosing={isMobleDrawerClosing}
+                    setOpen={setDrawerOpen}
+                    setMobileDrawerOpen={setMobileDrawerOpen}
+                    closeMobileDrawer={handleCloseMobileDrawer}
+                  />
+                </Stack>
+                <Stack py={desktop ? 0 : 3} width="100%" height={"fit-content"}>
                   <Stack
-                    height="100%"
-                    width={drawerOpen ? 248 : 80}
-                    display={mobileDrawerOpen || desktop ? "block" : "none"}
+                    spacing={4}
+                    sx={{
+                      animation: "fade-in 3.5s ease-in-out",
+                    }}
                   >
-                    <Menu
-                      open={drawerOpen}
-                      mobileDrawerOpen={mobileDrawerOpen}
-                      desktop={desktop}
-                      mobile={mobile}
-                      isMobleDrawerClosing={isMobleDrawerClosing}
-                      setOpen={setDrawerOpen}
-                      setMobileDrawerOpen={setMobileDrawerOpen}
-                      closeMobileDrawer={handleCloseMobileDrawer}
-                    />
-                  </Stack>
-                  <Stack
-                    py={desktop ? 0 : 3}
-                    width="100%"
-                    height={"fit-content"}
-                  >
-                    <Stack
-                      spacing={4}
-                      sx={{
-                        animation: "fade-in 3.5s ease-in-out",
-                      }}
-                    >
-                      {desktop && (
-                        <Stack
-                          width="100%"
-                          height={64}
-                          justifyContent="center"
-                          borderBottom="1.5px solid gray"
-                        >
-                          <Stack px={6} fontSize={24}>
-                            <Text>{generateTitle()}</Text>
-                          </Stack>
+                    {desktop && (
+                      <Stack
+                        width="100%"
+                        height={64}
+                        justifyContent="center"
+                        borderBottom="0.25px solid #178CF2"
+                      >
+                        <Stack px={6} fontSize={24}>
+                          <Text>{generateTitle()}</Text>
                         </Stack>
-                      )}
+                      </Stack>
+                    )}
 
-                      <Stack px={desktop ? 6 : 0}>{page}</Stack>
-                    </Stack>
+                    <Stack px={desktop ? 6 : 0}>{page}</Stack>
                   </Stack>
                 </Stack>
-              </StyledLayoutContainer>
-            </Stack>
-          )}
-        </Theme>
-      </ThemeProvider>
+              </Stack>
+            </StyledLayoutContainer>
+          </Stack>
+        )}
+      </Theme>
     </Suspense>
   );
 }

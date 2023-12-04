@@ -45,10 +45,10 @@ export default function Menu({
         "& .MuiPaper-root": {
           width: mobileDrawerOpen ? "100%" : "auto",
           animation: animationCheck(),
-          background: desktop ? "transparent" : "#131E30",
+          background: "#131E30",
           overflow: "visible",
           color: desktop ? "inherit" : "#fff",
-          borderRight: "1.5px solid gray",
+          borderRight: "0.25px solid #178CF2",
         },
       }}
     >
@@ -90,7 +90,7 @@ export default function Menu({
         <MenuItem
           open={open}
           icon={<HomeOutlinedIcon />}
-          text={t("navigation.home")}
+          text="Home"
           routes="/"
           mobile={mobile}
           setMobileDrawerOpen={setMobileDrawerOpen}
@@ -98,7 +98,7 @@ export default function Menu({
         <MenuItem
           open={open}
           icon={<AssignmentIndOutlinedIcon />}
-          text={t("navigation.resume")}
+          text="Resume"
           routes="/resume"
           mobile={mobile}
           setMobileDrawerOpen={setMobileDrawerOpen}
@@ -106,15 +106,15 @@ export default function Menu({
         <MenuItem
           open={open}
           icon={<ConstructionOutlinedIcon />}
-          text={t("navigation.tools")}
-          routes="/tools"
+          text="Services"
+          routes="/services"
           mobile={mobile}
           setMobileDrawerOpen={setMobileDrawerOpen}
         />
         <MenuItem
           open={open}
           icon={<HubOutlinedIcon />}
-          text={t("navigation.projects")}
+          text="Projects"
           routes="/projects"
           mobile={mobile}
           setMobileDrawerOpen={setMobileDrawerOpen}
@@ -122,7 +122,7 @@ export default function Menu({
         <MenuItem
           open={open}
           icon={<ContactPhoneOutlinedIcon />}
-          text={t("navigation.contact")}
+          text="Contact"
           routes="/contact"
           mobile={mobile}
           setMobileDrawerOpen={setMobileDrawerOpen}
