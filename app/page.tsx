@@ -56,9 +56,11 @@ export default function Home() {
             </Stack>
           </Stack>
         </Stack>
-        <Text size={desktop ? "4" : "2"}>
-          See more information about our services on the services page.
-        </Text>
+        {desktop && (
+          <Text>
+            See more information about our services on the services page.
+          </Text>
+        )}
       </Stack>
       <Stack flex={3.5}>
         <Text>d</Text>
