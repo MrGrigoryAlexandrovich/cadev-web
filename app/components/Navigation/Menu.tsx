@@ -9,7 +9,6 @@ import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
 import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
 import ContactPhoneOutlinedIcon from "@mui/icons-material/ContactPhoneOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
-import { useTranslation } from "react-i18next";
 import MenuItem from "./MenuItem";
 import logo from "../../assets/logo.png";
 import shortLogo from "../../assets/short-logo.png";
@@ -26,8 +25,6 @@ export default function Menu({
   setMobileDrawerOpen,
   closeMobileDrawer,
 }: IMenuComponent) {
-  const { t } = useTranslation();
-
   const animationCheck = () => {
     if (desktop) {
       return "slide-left 2s ease-in-out";
