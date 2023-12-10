@@ -1,7 +1,8 @@
 "use client";
+import Image from "next/image";
 import { Separator, Text } from "@radix-ui/themes";
 import { Stack } from "@mui/material";
-import Image from "next/image";
+import { useRouter } from "next/navigation";
 import WebOutlinedIcon from "@mui/icons-material/WebOutlined";
 import SystemSecurityUpdateGoodOutlinedIcon from "@mui/icons-material/SystemSecurityUpdateGoodOutlined";
 import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlined";
@@ -10,18 +11,17 @@ import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import ServiceComponent from "./components/ServiceComponent";
-import talentwunderLogo from "./assets/talentwunderLogo.png";
-import karrieraLogo from "./assets/karriera.png";
-import osterusLogo from "./assets/osterus.svg";
-import kmStilLogo from "./assets/kmStil.png";
-import { openInNewTab } from "./utils";
+import ContactContainer from "./components/ContactContainer";
+import HomePageItem from "./components/HomePageItem";
+import HomePageItemSeparator from "./components/HomePageItemSeparator";
 
 export default function Home() {
+  const router = useRouter();
   const theme = useTheme();
   const desktop = useMediaQuery(theme?.breakpoints.up("sm"));
 
   return (
-    <Stack direction={desktop ? "row" : "column"} width="100%" spacing={3}>
+    <Stack direction={desktop ? "row" : "column"} width="100%" spacing={0}>
       <Stack flex={6.5} spacing={8}>
         <Stack>
           <Text size="7" align={desktop ? "left" : "center"}>
@@ -65,14 +65,25 @@ export default function Home() {
               </Stack>
             </Stack>
             {desktop && (
-              <Text>
-                See more information about our services on the services page.
-              </Text>
+              <Stack
+                position="absolute"
+                bottom={
+                  window.innerHeight < 800
+                    ? 85
+                    : window.innerHeight < 1000
+                    ? "18%"
+                    : "20%"
+                }
+              >
+                <Text>
+                  See more information about our services on the services page.
+                </Text>
+              </Stack>
             )}
           </Stack>
         </Stack>
       </Stack>
-      <Stack>
+      <Stack my={desktop ? 0 : 3}>
         <Separator
           orientation={desktop ? "vertical" : "horizontal"}
           size="4"
@@ -80,77 +91,38 @@ export default function Home() {
             position: desktop ? "fixed" : "relative",
             top: desktop ? 64 : 0,
             background: desktop ? "#178CF2" : "#fff",
+            width: desktop ? "0.5px" : "100%",
           }}
         />
       </Stack>
-      <Stack flex={3.5}>
-        <Text size="7" align={desktop ? "left" : "center"}>
-          Partners
-        </Text>
-        <Stack
-          mt={3}
-          width="100%"
-          justifyContent="space-between"
-          alignSelf={desktop ? "flex-start" : "center"}
-          alignItems={desktop ? "flex-start" : "center"}
-        >
-          <Stack
-            p={2}
-            alignItems={desktop ? "flex-start" : "center"}
-            spacing={2}
-            sx={{ cursor: "pointer" }}
-            onClick={() => openInNewTab("https://talentwunder.com/")}
-          >
-            <Stack position="relative" right={desktop ? 16 : -6}>
-              <Image
-                src={talentwunderLogo}
-                height={50}
-                alt="talentwunder-logo"
-                priority
-              />
-            </Stack>
-            <Text size={desktop ? "5" : "3"}>Recruit smart people</Text>
-          </Stack>
-
-          <Stack
-            p={2}
-            alignItems={desktop ? "flex-start" : "center"}
-            spacing={2}
-            sx={{ cursor: "pointer" }}
-            onClick={() => openInNewTab("https://www.karriera.de/")}
-          >
-            <Image src={karrieraLogo} alt="karriera-logo" priority />
-            <Text size={desktop ? "5" : "3"}>Because we care who you hire</Text>
-          </Stack>
-
-          <Stack
-            p={2}
-            alignItems={desktop ? "flex-start" : "center"}
-            spacing={2}
-            sx={{ cursor: "pointer" }}
-            onClick={() => openInNewTab("https://www.osterus.com/")}
-          >
-            <Image height={30} src={osterusLogo} alt="osterus-logo" priority />
-            <Text size={desktop ? "5" : "3"}>Let the data speak</Text>
-          </Stack>
-
-          <Stack
-            p={2}
-            alignItems={desktop ? "flex-start" : "center"}
-            spacing={2}
-            sx={{ cursor: "pointer" }}
-            onClick={() =>
-              openInNewTab(
-                "https://www.companywall.si/HomeNew/ReCaptchaInfo?urlBack=%2Fpodjetje%2Fkm-stil-dzenaid-kusur-s-p%2FMM3fAJ80%2Fosnovno"
-              )
-            }
-          >
-            <Image height={100} src={kmStilLogo} alt="osterus-logo" priority />
-            <Text size={desktop ? "5" : "3"}>
-              Safe quality is our responsibility
-            </Text>
-          </Stack>
+      <Stack
+        flex={3.5}
+        mr={desktop ? -6 : 0}
+        height={desktop ? "86.5vh" : "auto"}
+      >
+        <Stack px={5}>
+          <Text size="7" align={desktop ? "left" : "center"}>
+            Company
+          </Text>
         </Stack>
+        <HomePageItem
+          desktop={desktop}
+          marginTop={desktop ? 7 : 3}
+          isImage
+          title="Director"
+          subtitle="Ahmed Cvrčak"
+          description="engineer of computer science"
+        />
+        <HomePageItemSeparator desktop={desktop} />
+        <HomePageItem
+          desktop={desktop}
+          marginTop={4}
+          title="Headquarter"
+          subtitle="Maglaj"
+          description="+387/60-339-40-22"
+        />
+        <HomePageItemSeparator desktop={desktop} />
+        <ContactContainer desktop={desktop} />
       </Stack>
     </Stack>
   );
