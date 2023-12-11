@@ -16,6 +16,15 @@ const ContactContainer = ({ desktop }: { readonly desktop: boolean }) => {
       alignItems="center"
       justifyContent="center"
       spacing={3}
+      sx={{
+        cursor: "pointer",
+        "&:hover": {
+          color: "#178CF2",
+          svg: {
+            fill: "#178CF2",
+          },
+        },
+      }}
     >
       <Image src={supportImage} height={70} alt="suport-picture" priority />
       <Button variant="soft" onClick={() => router.push("/contact")}>

@@ -4,7 +4,7 @@ import { Separator } from "@radix-ui/themes";
 
 const HomePageItemSeparator = ({ desktop }: { readonly desktop: boolean }) => {
   return (
-    <Stack mt={3}>
+    <Stack mt={4}>
       <Separator
         size="4"
         style={{

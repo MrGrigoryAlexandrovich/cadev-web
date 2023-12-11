@@ -27,6 +27,15 @@ const HomePageItem = ({
       direction={desktop ? "row" : "column"}
       alignItems={desktop ? "flex-start" : "center"}
       spacing={3}
+      sx={{
+        cursor: "pointer",
+        "&:hover": {
+          color: "#178CF2",
+          svg: {
+            fill: "#178CF2",
+          },
+        },
+      }}
     >
       {isImage ? (
         <Image

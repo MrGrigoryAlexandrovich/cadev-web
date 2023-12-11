@@ -1,13 +1,12 @@
 "use client";
-import Image from "next/image";
 import { Separator, Text } from "@radix-ui/themes";
 import { Stack } from "@mui/material";
-import { useRouter } from "next/navigation";
 import WebOutlinedIcon from "@mui/icons-material/WebOutlined";
 import SystemSecurityUpdateGoodOutlinedIcon from "@mui/icons-material/SystemSecurityUpdateGoodOutlined";
 import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlined";
 import ContactSupportOutlinedIcon from "@mui/icons-material/ContactSupportOutlined";
 import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
+import StorageOutlinedIcon from "@mui/icons-material/StorageOutlined";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import ServiceComponent from "./components/ServiceComponent";
@@ -16,7 +15,6 @@ import HomePageItem from "./components/HomePageItem";
 import HomePageItemSeparator from "./components/HomePageItemSeparator";
 
 export default function Home() {
-  const router = useRouter();
   const theme = useTheme();
   const desktop = useMediaQuery(theme?.breakpoints.up("sm"));
 
@@ -27,59 +25,42 @@ export default function Home() {
           <Text size="7" align={desktop ? "left" : "center"}>
             Services & Offer
           </Text>
-          <Stack spacing={14.5}>
-            <Stack mt={desktop ? 0 : 3} spacing={3}>
-              <Stack direction={desktop ? "row" : "column"} spacing={3}>
-                <ServiceComponent
-                  title="Web Development"
-                  icon={<WebOutlinedIcon />}
-                  desktop={desktop}
-                />
-                <ServiceComponent
-                  title="Mobile Development"
-                  icon={<SystemSecurityUpdateGoodOutlinedIcon />}
-                  desktop={desktop}
-                />
-                <ServiceComponent
-                  title="Desktop Development"
-                  icon={<DesktopWindowsOutlinedIcon />}
-                  desktop={desktop}
-                />
-              </Stack>
-              <Stack direction={desktop ? "row" : "column"} spacing={3}>
-                <ServiceComponent
-                  title="Consulting"
-                  icon={<ContactSupportOutlinedIcon />}
-                  desktop={desktop}
-                />
-                <ServiceComponent
-                  title="Maintenance"
-                  icon={<ConstructionOutlinedIcon />}
-                  desktop={desktop}
-                />
-                <ServiceComponent
-                  title="Consulting"
-                  icon={<ContactSupportOutlinedIcon />}
-                  desktop={desktop}
-                />
-              </Stack>
+
+          <Stack mt={3} mr={desktop ? 5 : 0} spacing={3}>
+            <Stack direction={desktop ? "row" : "column"} spacing={3}>
+              <ServiceComponent
+                title="Web Development"
+                icon={<WebOutlinedIcon />}
+                desktop={desktop}
+              />
+              <ServiceComponent
+                title="Mobile Development"
+                icon={<SystemSecurityUpdateGoodOutlinedIcon />}
+                desktop={desktop}
+              />
+              <ServiceComponent
+                title="Desktop Development"
+                icon={<DesktopWindowsOutlinedIcon />}
+                desktop={desktop}
+              />
             </Stack>
-            {desktop && (
-              <Stack
-                position="absolute"
-                bottom={
-                  window.innerHeight < 800
-                    ? 85
-                    : window.innerHeight < 1000
-                    ? "18%"
-                    : "20%"
-                }
-              >
-                <Text>
-                  See more information about our services on the services page.
-                </Text>
-              </Stack>
-            )}
+            <Stack direction={desktop ? "row" : "column"} spacing={3}>
+              <ServiceComponent
+                title="System administration"
+                icon={<StorageOutlinedIcon />}
+                desktop={desktop}
+              />
+              <ServiceComponent
+                title="Maintenance"
+                icon={<ConstructionOutlinedIcon />}
+                desktop={desktop}
+              />
+              <ServiceComponent
+                title="Consulting"
+                icon={<ContactSupportOutlinedIcon />}
+                desktop={desktop}
+              />
+            </Stack>
           </Stack>
         </Stack>
       </Stack>

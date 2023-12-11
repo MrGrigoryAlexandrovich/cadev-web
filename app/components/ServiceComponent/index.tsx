@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { Stack } from "@mui/material";
+import { StyledServiceComponentContainer } from "./style";
 
 export default function ServiceComponent({
   desktop,
@@ -11,10 +12,13 @@ export default function ServiceComponent({
   title: string;
 }) {
   return (
-    <Stack spacing={1}>
+    <StyledServiceComponentContainer
+      width={desktop ? "auto" : 170}
+      height={desktop ? "auto" : 170}
+      spacing={2}
+      alignSelf="center"
+    >
       <Stack
-        alignItems="center"
-        justifyContent="flex-end"
         sx={{
           "& svg": {
             width: desktop ? "60%" : 64,
@@ -24,9 +28,7 @@ export default function ServiceComponent({
       >
         {icon}
       </Stack>
-      <Stack width="100%" alignItems="center">
-        {title}
-      </Stack>
-    </Stack>
+      <Stack>{title}</Stack>
+    </StyledServiceComponentContainer>
   );
 }
