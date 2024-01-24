@@ -692,7 +692,6 @@ span {
   z-index: -1;
 }
 
-
 .title-anim {
   opacity: 0;
 }
@@ -704,3 +703,11 @@ span {
 /* ==== 
    --------- (2.03) global styles end ---------
    ==== */
+
+.director-image {
+  filter: grayscale(60%);
+}
+
+.location-text {
+  font-size: 13.75px;
+}

@@ -325,7 +325,16 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
           </div>
           <div className="mobile-menu__social social nav-fade">
             <Link
-              href="https://www.facebook.com/"
+              href="https://www.linkedin.com/in/ca-dev/"
+              target="_blank"
+              aria-label="share us on linkedin"
+              title="linkedin"
+              className="in"
+            >
+              <i className="bi bi-linkedin"></i>
+            </Link>
+            <Link
+              href="https://www.facebook.com/cvrcak.ahmed/"
               target="_blank"
               aria-label="share us on facebook"
               title="facebook"
@@ -334,25 +343,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
               <i className="bi bi-facebook"></i>
             </Link>
             <Link
-              href="https://www.twitter.com/"
-              target="_blank"
-              aria-label="share us on twitter"
-              title="twitter"
-              className="tw"
-            >
-              <i className="bi bi-twitter"></i>
-            </Link>
-            <Link
-              href="https://www.youtube.com/"
-              className="yt"
-              target="_blank"
-              aria-label="share us on youtube"
-              title="youtube"
-            >
-              <i className="fa-brands fa-youtube"></i>
-            </Link>
-            <Link
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/_mr.assertive_/"
               target="_blank"
               aria-label="share us on instagram"
               title="instagram"

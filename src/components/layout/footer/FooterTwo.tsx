@@ -47,17 +47,20 @@ const FooterTwo = () => {
           <div className="row align-items-center gaper">
             <div className="col-12 col-lg-4">
               <div className="social justify-content-center justify-content-lg-start">
-                <Link href="https://www.twitter.com/" target="_blank">
-                  <i className="fa-brands fa-twitter"></i>
+                <Link
+                  href="https://www.linkedin.com/in/ca-dev/"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-linkedin"></i>
                 </Link>
-                <Link href="https://www.instagram.com/" target="_blank">
+                <Link
+                  href="https://www.instagram.com/_mr.assertive_/"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-instagram"></i>
                 </Link>
                 <Link href="https://www.facebook.com/" target="_blank">
                   <i className="fa-brands fa-facebook-messenger"></i>
-                </Link>
-                <Link href="https://www.youtube.com/" target="_blank">
-                  <i className="fa-brands fa-youtube"></i>
                 </Link>
               </div>
             </div>

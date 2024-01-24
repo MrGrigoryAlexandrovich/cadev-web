@@ -230,32 +230,25 @@ const HeaderFour = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
             </div>
             <div className="offcanvas-menu__social social nav-fade">
               <Link
-                href="https://www.twitter.com/"
-                className="tw"
+                href="https://www.linkedin.com/in/ca-dev/"
+                className="in"
                 target="_blank"
               >
-                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-linkedin"></i>
               </Link>
               <Link
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/_mr.assertive_/"
                 className="in"
                 target="_blank"
               >
                 <i className="fa-brands fa-instagram"></i>
               </Link>
               <Link
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/cvrcak.ahmed/"
                 className="fb"
                 target="_blank"
               >
                 <i className="fa-brands fa-facebook-messenger"></i>
-              </Link>
-              <Link
-                href="https://www.youtube.com/"
-                className="yt"
-                target="_blank"
-              >
-                <i className="fa-brands fa-youtube"></i>
               </Link>
             </div>
           </nav>

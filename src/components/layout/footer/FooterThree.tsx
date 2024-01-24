@@ -29,13 +29,22 @@ const FooterThree = () => {
           <div className="row align-items-center gaper">
             <div className="col-12 col-lg-6">
               <div className="social justify-content-center justify-content-lg-start">
-                <Link href="https://www.twitter.com/" target="_blank">
-                  Twitter
+                <Link
+                  href="https://www.linkedin.com/in/ca-dev/"
+                  target="_blank"
+                >
+                  Linkedin
                 </Link>
-                <Link href="https://www.instagram.com/" target="_blank">
+                <Link
+                  href="https://www.instagram.com/_mr.assertive_/"
+                  target="_blank"
+                >
                   Instagram
                 </Link>
-                <Link href="https://www.facebook.com/" target="_blank">
+                <Link
+                  href="https://www.facebook.com/cvrcak.ahmed/"
+                  target="_blank"
+                >
                   Facebook
                 </Link>
               </div>

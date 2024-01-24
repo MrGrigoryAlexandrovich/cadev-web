@@ -121,11 +121,11 @@ const Footer = () => {
             <div className="footer__content text-center pt-120 pb-120">
               <h2 className="light-title-xl text-uppercase fw-5">
                 <Link
-                  href="mailto:hello@exgridinfo.com"
+                  href="mailto:ahmedcvrle@gmail.com"
                   className="animated-text"
                   ref={animatedTextRef}
                 >
-                  hello@exgridinfo.com
+                  ahmedcvrle@gmail.com
                   {animatedTextContent.split("").map((char, index) => (
                     <span
                       aria-hidden="true"
@@ -157,17 +157,23 @@ const Footer = () => {
             </div>
             <div className="col-12 col-lg-4">
               <div className="social justify-content-center justify-content-lg-end">
-                <Link href="https://www.twitter.com/" target="_blank">
-                  <i className="fa-brands fa-twitter"></i>
+                <Link
+                  href="https://www.linkedin.com/in/ca-dev/"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-linkedin"></i>
                 </Link>
-                <Link href="https://www.instagram.com/" target="_blank">
+                <Link
+                  href="https://www.instagram.com/_mr.assertive_/"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-instagram"></i>
                 </Link>
-                <Link href="https://www.facebook.com/" target="_blank">
+                <Link
+                  href="https://www.facebook.com/cvrcak.ahmed/"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-facebook-messenger"></i>
-                </Link>
-                <Link href="https://www.youtube.com/" target="_blank">
-                  <i className="fa-brands fa-youtube"></i>
                 </Link>
               </div>
             </div>

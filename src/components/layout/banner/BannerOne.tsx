@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import bnonethumb from "public/images/banner/bn-one-thumb.png";
+import director from "@/assets/director.jpeg";
 import bnblog from "public/images/banner/bn-blog.png";
 import hoverthumb from "public/images/case-study/hover-thumb.png";
 import two from "public/images/case-study/two.png";
@@ -93,50 +93,49 @@ const BannerOne = () => {
               <div className="banner__meta">
                 <div className="banner__meta-single bg-grd-one">
                   <div className="thumb">
-                    <Image src={bnonethumb} alt="Image" />
+                    <Image
+                      src={director}
+                      alt="director-image"
+                      className="director-image"
+                    />
                   </div>
                   <div className="content">
                     <p className="title-sm fw-7">
-                      <Link href="about-me">Andrea E. Harper</Link>
+                      <Link href="about-me">Ahmed Cvrčak</Link>
                     </p>
                     <p className="text-sm text-quaternary d-flex align-items-center fw-7">
                       <i className="fa-solid fa-briefcase"></i>
-                      Theme Designer at Envato
+                      Director at CA DEV
                     </p>
                     <p className="text-sm text-quaternary d-flex align-items-center fw-7">
                       <i className="fa-solid fa-location-dot"></i>
-                      Lives in New York, USA
+                      <span className="location-text">
+                        Maglaj, Bosnia and Herzegovina
+                      </span>
                     </p>
                   </div>
                   <hr />
                   <div className="social justify-content-start">
                     <Link
-                      href="https://www.twitter.com/"
-                      className="tw"
+                      href="https://www.linkedin.com/in/ca-dev/"
+                      className="in"
                       target="_blank"
                     >
-                      <i className="fa-brands fa-twitter"></i>
+                      <i className="fa-brands fa-linkedin"></i>
                     </Link>
                     <Link
-                      href="https://www.instagram.com/"
+                      href="https://www.instagram.com/_mr.assertive_/"
                       className="in"
                       target="_blank"
                     >
                       <i className="fa-brands fa-instagram"></i>
                     </Link>
                     <Link
-                      href="https://www.facebook.com/"
+                      href="https://www.facebook.com/cvrcak.ahmed/"
                       className="fb"
                       target="_blank"
                     >
                       <i className="fa-brands fa-facebook-messenger"></i>
-                    </Link>
-                    <Link
-                      href="https://www.youtube.com/"
-                      className="yt"
-                      target="_blank"
-                    >
-                      <i className="fa-brands fa-youtube"></i>
                     </Link>
                   </div>
                 </div>
