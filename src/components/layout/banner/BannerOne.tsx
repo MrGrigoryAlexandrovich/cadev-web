@@ -286,50 +286,43 @@ const BannerOne = () => {
               </div>
               <div className="banner__sidebar fade-wrapper">
                 <div className="banner__sidebar-single bg-grd-two">
-                  <h5 className="title-sm">My Specializations</h5>
-                  <div className="banner__sidebar-special fade-top">
-                    <Link href="service-single">
-                      <span className="service-info">
-                        <span className="fw-5">Website Design</span>
-                        <span className="text-sm">24 Projects</span>
-                      </span>
-                      <span>
-                        <i className="bi bi-arrow-right-circle-fill"></i>
-                      </span>
-                    </Link>
+                  <h5 className="title-sm">Services</h5>
+                  <div className="banner__sidebar-special fade-top d-flex flex-row justify-content-between align-items-center">
+                    <span className="service-info">
+                      <span className="fw-5">Web Development</span>
+                    </span>
+                    <i className="bi bi-code-slash"></i>
                   </div>
-                  <div className="banner__sidebar-special fade-top">
-                    <Link href="service-single">
-                      <span className="service-info">
-                        <span className="fw-5">web development</span>
-                        <span className="text-sm">16 Projects</span>
-                      </span>
-                      <span>
-                        <i className="bi bi-arrow-right-circle-fill"></i>
-                      </span>
-                    </Link>
+                  <div className="banner__sidebar-special fade-top d-flex flex-row justify-content-between align-items-center">
+                    <span className="service-info">
+                      <span className="fw-5">Mobile development</span>
+                    </span>
+
+                    <i className="bi bi-phone"></i>
                   </div>
-                  <div className="banner__sidebar-special fade-top">
-                    <Link href="service-single">
-                      <span className="service-info">
-                        <span className="fw-5">UX/UI Design</span>
-                        <span className="text-sm">45 Projects</span>
-                      </span>
-                      <span>
-                        <i className="bi bi-arrow-right-circle-fill"></i>
-                      </span>
-                    </Link>
+                  <div className="banner__sidebar-special fade-top d-flex flex-row justify-content-between align-items-center">
+                    <span className="service-info">
+                      <span className="fw-5">Desktop development</span>
+                    </span>
+                    <i className="bi bi-pc"></i>
                   </div>
-                  <div className="banner__sidebar-special fade-top">
-                    <Link href="service-single">
-                      <span className="service-info">
-                        <span className="fw-5">Digital Marketing</span>
-                        <span className="text-sm">12 Projects</span>
-                      </span>
-                      <span>
-                        <i className="bi bi-arrow-right-circle-fill"></i>
-                      </span>
-                    </Link>
+                  <div className="banner__sidebar-special fade-top d-flex flex-row justify-content-between align-items-center">
+                    <span className="service-info">
+                      <span className="fw-5">Development coaching</span>
+                    </span>
+                    <i className="bi bi-code-square"></i>
+                  </div>
+                  <div className="banner__sidebar-special fade-top d-flex flex-row justify-content-between align-items-center">
+                    <span className="service-info">
+                      <span className="fw-5">Maintenance</span>
+                    </span>
+                    <i className="bi bi-tools"></i>
+                  </div>
+                  <div className="banner__sidebar-special fade-top d-flex flex-row justify-content-between align-items-center">
+                    <span className="service-info">
+                      <span className="fw-5">IT Consulting</span>
+                    </span>
+                    <i className="bi bi-info-circle"></i>
                   </div>
                 </div>
                 <div className="banner__sidebar-single bg-grd-two">
