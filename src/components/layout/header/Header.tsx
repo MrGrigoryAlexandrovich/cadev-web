@@ -101,30 +101,8 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                   </div>
                   <div className="navbar__menu">
                     <ul className="navbar__list">
-                      <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Home
-                        </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="/">Creative Designer</Link>
-                          </li>
-                          <li>
-                            <Link href="index-two">Web Developer</Link>
-                          </li>
-                          <li>
-                            <Link href="index-three">Freelancer</Link>
-                          </li>
-                          <li>
-                            <Link href="index-four">Digital Marketter</Link>
-                          </li>
-                          <li>
-                            <Link href="index-five">Psychiatrist</Link>
-                          </li>
-                        </ul>
+                      <li className="navbar__item nav-fade">
+                        <Link href="/">Home</Link>
                       </li>
                       <li className="navbar__item nav-fade">
                         <Link href="about-me">About Me</Link>
@@ -230,33 +208,8 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
           </div>
           <div className="mobile-menu__list">
             <ul className="navbar__list">
-              <li className="navbar__item navbar__item--has-children nav-fade">
-                <button
-                  aria-label="dropdown menu"
-                  className={`navbar__dropdown-label ${isSubMenuButton(
-                    "home"
-                  )}`}
-                  onClick={() => handleSubmenu("home")}
-                >
-                  Home
-                </button>
-                <ul className={`navbar__sub-menu ${isSubMenuOpen("home")}`}>
-                  <li>
-                    <Link href="/">Creative Designer</Link>
-                  </li>
-                  <li>
-                    <Link href="index-two">Web Developer</Link>
-                  </li>
-                  <li>
-                    <Link href="index-three">Freelancer</Link>
-                  </li>
-                  <li>
-                    <Link href="index-four">Digital Marketter</Link>
-                  </li>
-                  <li>
-                    <Link href="index-five">Psychiatrist</Link>
-                  </li>
-                </ul>
+              <li className="navbar__item nav-fade">
+                <Link href="/">Home</Link>
               </li>
               <li className="navbar__item nav-fade">
                 <Link href="about-me">About Me</Link>

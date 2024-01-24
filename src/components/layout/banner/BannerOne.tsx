@@ -4,11 +4,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import director from "@/assets/director.jpeg";
-import bnblog from "public/images/banner/bn-blog.png";
-import hoverthumb from "public/images/case-study/hover-thumb.png";
-import two from "public/images/case-study/two.png";
-import three from "public/images/case-study/three.png";
-import thumb from "public/images/case-study/thumb.png";
+import directorOffice from "@/assets/directorOffice.jpg";
 import shape from "public/images/banner/shape.png";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -169,25 +165,28 @@ const BannerOne = () => {
               <div className="banner__content">
                 <div className="banner__content-single bg-grd-two">
                   <h2 className="title-xxl  fw-5 title-anim">
-                    Hi I&apos;m Andrea,
+                    Welcome to
                     <br />
                     <span className="before">
-                      Webflow{" "}
+                      CA{" "}
                       <Image src={shape} alt="Image" className="before-image" />
-                    </span>{" "}
-                    Designer
+                    </span>
+                    <span className="before">
+                      DEVELOPMENT
+                      <Image src={shape} alt="Image" className="before-image" />
+                    </span>
                   </h2>
                   <p>
-                    My expertise lies in creating compelling user experiences
-                    for early-stage startups, achieved by establishing a strong
-                    link between the unique.
+                    Our expertise lies in creating quality software solutions
+                    for different types of devices and systems. We take care of
+                    your software.
                   </p>
                   <hr />
                   <div className="cta">
                     <div className="cta-single">
                       <p className="d-flex align-items-center">
                         <i className="fa-solid fa-check"></i>
-                        <span>7+</span>
+                        <span>5+</span>
                       </p>
                       <p className="text-uppercase text-quaternary text-sm">
                         YEARS EXPERIENCE
@@ -196,7 +195,7 @@ const BannerOne = () => {
                     <div className="cta-single">
                       <p className="d-flex align-items-center">
                         <i className="fa-solid fa-check"></i>
-                        <span>125+</span>
+                        <span>10+</span>
                       </p>
                       <p className="text-uppercase text-quaternary text-sm">
                         CLIENTS WORLD WIDE
@@ -205,7 +204,7 @@ const BannerOne = () => {
                     <div className="cta-single">
                       <p className="d-flex align-items-center">
                         <i className="fa-solid fa-check"></i>
-                        <span>750+</span>
+                        <span>10+</span>
                       </p>
                       <p className="text-uppercase text-quaternary text-sm">
                         TOTAL PROJECTS
@@ -223,122 +222,7 @@ const BannerOne = () => {
                     </div>
                   </div>
                 </div>
-                <div className="banner__content-study pt-60 fade-wrapper">
-                  <div className="title-animation position-relative d-flex align-items-center justify-content-center">
-                    <div className="overflow-hidden position-relative">
-                      <h2 className="fw-5 text-white title-xl">Case</h2>
-                    </div>
-                    <div className="overflow-hidden position-relative">
-                      <h2 className="fw-5 text-quinary title-xl">Study</h2>
-                    </div>
-                  </div>
-                  <div className="banner__content-study__inner">
-                    <div className="banner__content-study__single fade-top">
-                      <div className="tag">
-                        <Link href="case-study-single">Web Application</Link>
-                        <Link href="case-study-single">
-                          Client Review
-                          <i className="bi bi-play"></i>
-                        </Link>
-                      </div>
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="content__left">
-                          <h3 className="title-lg">
-                            <Link href="case-study-single">
-                              Top view idealight bulb draw
-                            </Link>
-                          </h3>
-                        </div>
-                        <div className="content__right">
-                          <p className="text-sm text-capitalize">
-                            <Link href="case-study">design & animation</Link>
-                          </p>
-                        </div>
-                      </div>
-                      <div className="case-study-hover d-none d-md-block">
-                        <Image src={hoverthumb} alt="Image" />
-                      </div>
-                    </div>
-                    <div className="banner__content-study__single fade-top">
-                      <div className="tag">
-                        <Link href="case-study-single">Web Application</Link>
-                        <Link href="case-study-single">
-                          Client Review
-                          <i className="bi bi-play"></i>
-                        </Link>
-                      </div>
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="content__left">
-                          <h3 className="title-lg">
-                            <Link href="case-study-single">
-                              The Wild Hunt web system
-                            </Link>
-                          </h3>
-                        </div>
-                        <div className="content__right">
-                          <p className="text-sm text-capitalize">
-                            <Link href="case-study">design & animation</Link>
-                          </p>
-                        </div>
-                      </div>
-                      <div className="case-study-hover d-none d-md-block">
-                        <Image src={two} alt="Image" />
-                      </div>
-                    </div>
-                    <div className="banner__content-study__single fade-top">
-                      <div className="tag">
-                        <Link href="case-study-single">Web Application</Link>
-                        <Link href="case-study-single">
-                          Client Review
-                          <i className="bi bi-play"></i>
-                        </Link>
-                      </div>
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="content__left">
-                          <h3 className="title-lg">
-                            <Link href="case-study-single">
-                              Netfly provides a user-friendly
-                            </Link>
-                          </h3>
-                        </div>
-                        <div className="content__right">
-                          <p className="text-sm text-capitalize">
-                            <Link href="case-study">design & animation</Link>
-                          </p>
-                        </div>
-                      </div>
-                      <div className="case-study-hover d-none d-md-block">
-                        <Image src={three} alt="Image" />
-                      </div>
-                    </div>
-                    <div className="banner__content-study__single fade-top">
-                      <div className="tag">
-                        <Link href="case-study-single">Web Application</Link>
-                        <Link href="case-study-single">
-                          Client Review
-                          <i className="bi bi-play"></i>
-                        </Link>
-                      </div>
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="content__left">
-                          <h3 className="title-lg">
-                            <Link href="case-study-single">
-                              marketplaces, view NFT collections
-                            </Link>
-                          </h3>
-                        </div>
-                        <div className="content__right">
-                          <p className="text-sm text-capitalize">
-                            <Link href="case-study">design & animation</Link>
-                          </p>
-                        </div>
-                      </div>
-                      <div className="case-study-hover d-none d-md-block">
-                        <Image src={thumb} alt="Image" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 <div className="banner__content-about pt-60 fade-wrapper">
                   <div className="title-animation position-relative d-flex align-items-center justify-content-center">
                     <div className="overflow-hidden position-relative">
@@ -350,35 +234,13 @@ const BannerOne = () => {
                   </div>
                   <div className="banner__content-about-inner">
                     <h3 className="title-xxl text-capitalize fw-4 title-anim">
-                      Hi i&apos;m andrea,
-                      <span className="fw-7">Webflow Designer</span> I work as
-                      the
-                      <span className="span-block">Creative Director</span> at
-                      Pe Creative Studio{" "}
-                      <span className="fw-7">in Brooklyn.</span>
+                      Hi i&apos;m Ahmed,
+                      <span className="fw-7">Software Developer</span>and{" "}
+                      <span className="span-block">Director</span> at CA DEV{" "}
+                      <span className="fw-7">in Maglaj.</span>
                     </h3>
                     <div className="bn-about-thumb fade-top">
-                      <Image src={bnblog} alt="Image" />
-                      <Link
-                        href="https://www.youtube.com/"
-                        className="yt"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-youtube"></i>
-                      </Link>
-                    </div>
-                    <div className="bn-about__content fade-top">
-                      <div className="bn-about__content-left">
-                        <h3 className="title-lg">Awwwards.</h3>
-                      </div>
-                      <div className="bn-about__content-right">
-                        <ul>
-                          <li>site of the day portfolio (2020)</li>
-                          <li>best website content (2021)</li>
-                          <li>up labs contest winning (2022)</li>
-                          <li>site of the day portfolio (2020)</li>
-                        </ul>
-                      </div>
+                      <Image src={directorOffice} alt="Image" />
                     </div>
                   </div>
                 </div>

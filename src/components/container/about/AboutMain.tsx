@@ -122,9 +122,9 @@ const AboutMain = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:info.andrea@mail.com">
+                    <Link href="mailto:ahmedcvrle@gmail.com">
                       <i className="fa-regular fa-envelope"></i>
-                      info.andrea@mail.com
+                      ahmedcvrle@gmail.com
                     </Link>
                   </li>
                 </ul>
@@ -143,7 +143,7 @@ const AboutMain = () => {
                 </div>
                 <div className="content b-c-alter">
                   <h4 className="title-md ">
-                    Hi I&apos;m Andrea,
+                    Hi Welcome&apos;to CA,
                     <br />
                     <Typewriter
                       options={{

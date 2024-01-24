@@ -92,16 +92,15 @@ const BannerTwo = () => {
               <div className="banner-two__group">
                 <div className="banner-two__left">
                   <h1 className="title-xxl">
-                    Hi I&apos;m Andrea,
+                    Hi I&apos;m Ahmed,
                     <br />
                     <Typewriter
                       options={{
                         strings: [
                           "web developer",
-                          "UI designer",
-                          "Digital Marketer",
-                          "Freelancer",
-                          "Psychiatrist",
+                          "mobile developer",
+                          "desktop developer",
+                          "IT consultant",
                         ],
                         autoStart: true,
                         loop: true,
@@ -167,13 +166,13 @@ const BannerTwo = () => {
                       target="_blank"
                     >
                       <i className="fa-solid fa-location-dot"></i>
-                      Lives in New York, USA
+                      Lives in Maglaj, Bosnia and Herzegovina
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:info.andrea@mail.com">
+                    <Link href="mailto:ahmedcvrle@gmailcom">
                       <i className="fa-regular fa-envelope"></i>
-                      info.andrea@mail.com
+                      ahmedcvrle@gmailcom
                     </Link>
                   </li>
                 </ul>
