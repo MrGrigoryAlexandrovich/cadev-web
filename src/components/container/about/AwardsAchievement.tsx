@@ -61,7 +61,7 @@ const AwardsAchievement = () => {
                     <div className="bn-about-thumb">
                       <Image src={awone} alt="Image" />
                       <Link
-                        href="https://www.youtube.com/"
+                        href="https://www.youtube.com"
                         className="yt"
                         target="_blank"
                       >
