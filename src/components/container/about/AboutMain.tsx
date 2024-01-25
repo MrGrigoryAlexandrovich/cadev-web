@@ -4,7 +4,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Typewriter from "typewriter-effect";
-import bnonethumb from "public/images/banner/bn-one-thumb.png";
+import companyLogo from "public/images/favicon.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,7 +87,7 @@ const AboutMain = () => {
   }, []);
 
   return (
-    <section className="about-me fade-wrapper">
+    <section className="about-me fade-wrapper pt-120 mt-5">
       <div className="container">
         <div className="row gaper">
           <div className="col-12 col-xxl-6">
@@ -95,18 +95,18 @@ const AboutMain = () => {
               <div className="banner-two__group">
                 <div className="banner-two__left">
                   <h2 className="title-xl title-anim">
-                    I Bring Your Website With Vision To Life
+                    We will breathe life into your website vision.
                   </h2>
                 </div>
               </div>
               <hr />
               <div className="banner-content__paragraph">
                 <p className="text-septenary">
-                  I&apos;m a web developer from Southampton, UK. Currently lead
-                  developer at a local agency, Fhoke. In my spare time I enjoy
-                  DIY, gaming and building my own projects. My preferred tools
-                  are PHP, Laravel and Vue.js. I recently converted my Inertia
-                  app from Laravel Mix to using Vite.
+                  Build your digital dreams with CA DEV. We breathe life into
+                  your ideas, crafting beautiful web, mobile, and desktop
+                  applications. And once they're live, we're your trusted
+                  partner, providing expert care and insightful IT consulting
+                  for smooth operation and continuous growth.
                 </p>
               </div>
               <hr />
@@ -114,11 +114,11 @@ const AboutMain = () => {
                 <ul>
                   <li>
                     <Link
-                      href="https://goo.gl/maps/ktoFZVxqpYmtJNiR8"
+                      href="https://www.google.com/maps/place/Maglaj/@44.5442206,18.0749041,14z/data=!3m1!4b1!4m6!3m5!1s0x475e919eb6e2bd8f:0x980dd91ebf7a48e2!8m2!3d44.5454847!4d18.1033619!16zL20vMGQ5OV92?entry=ttu"
                       target="_blank"
                     >
                       <i className="fa-solid fa-location-dot"></i>
-                      Lives in New York, USA
+                      Maglaj, Domislica bb
                     </Link>
                   </li>
                   <li>
@@ -139,20 +139,19 @@ const AboutMain = () => {
             <div className="banner__meta fade-top">
               <div className="banner__meta-single bg-grd-one">
                 <div className="thumb">
-                  <Image src={bnonethumb} alt="Image" />
+                  <Image src={companyLogo} alt="Image" />
                 </div>
                 <div className="content b-c-alter">
                   <h4 className="title-md ">
-                    Hi Welcome&apos;to CA,
+                    We take care of your
                     <br />
                     <Typewriter
                       options={{
                         strings: [
-                          "web developer",
-                          "UI designer",
-                          "Digital Marketer",
-                          "Freelancer",
-                          "Psychiatrist",
+                          "web application",
+                          "mobile application",
+                          "desktop application",
+                          "IT knowledge",
                         ],
                         autoStart: true,
                         loop: true,
@@ -188,7 +187,7 @@ const AboutMain = () => {
           </div>
           <div className="col-12 col-lg-6 col-xxl-3">
             <div className="banner-two__sidebar fade-top">
-              <h4 className="title-md fw-7">My Special Skills</h4>
+              <h4 className="title-md fw-7">Special Skills</h4>
               <div className="skill-wrap">
                 <div className="skill-bar-single">
                   <div className="skill-bar-title">
@@ -206,7 +205,7 @@ const AboutMain = () => {
                     <p>Programming Languages</p>
                     <span className="percent-value"></span>
                   </div>
-                  <div className="skill-bar-wrapper" data-percent="90%">
+                  <div className="skill-bar-wrapper" data-percent="100%">
                     <div className="skill-bar">
                       <div className="skill-bar-percent"></div>
                     </div>
@@ -217,7 +216,7 @@ const AboutMain = () => {
                     <p>Program Frameworks</p>
                     <span className="percent-value"></span>
                   </div>
-                  <div className="skill-bar-wrapper" data-percent="70%">
+                  <div className="skill-bar-wrapper" data-percent="100%">
                     <div className="skill-bar">
                       <div className="skill-bar-percent"></div>
                     </div>
@@ -225,10 +224,10 @@ const AboutMain = () => {
                 </div>
                 <div className="skill-bar-single">
                   <div className="skill-bar-title">
-                    <p>Problem Solving</p>
+                    <p>Naintenance</p>
                     <span className="percent-value"></span>
                   </div>
-                  <div className="skill-bar-wrapper" data-percent="80%">
+                  <div className="skill-bar-wrapper" data-percent="100%">
                     <div className="skill-bar">
                       <div className="skill-bar-percent"></div>
                     </div>
@@ -236,10 +235,10 @@ const AboutMain = () => {
                 </div>
                 <div className="skill-bar-single">
                   <div className="skill-bar-title">
-                    <p>Communication Skills</p>
+                    <p>IT Consulting</p>
                     <span className="percent-value"></span>
                   </div>
-                  <div className="skill-bar-wrapper" data-percent="85%">
+                  <div className="skill-bar-wrapper" data-percent="100%">
                     <div className="skill-bar">
                       <div className="skill-bar-percent"></div>
                     </div>

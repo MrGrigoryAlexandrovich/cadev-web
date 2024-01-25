@@ -220,7 +220,7 @@ const BannerOne = () => {
                   </div>
                 </div>
                 <div className="banner__history fade-wrapper">
-                  <h3 className="title-xl">History</h3>
+                  <h3 className="title-xl">Experience</h3>
                   <div className="banner__history-single fade-top">
                     <div className="lefter">
                       <h2 className="title-lg">Now</h2>
@@ -301,7 +301,7 @@ const BannerOne = () => {
                   </div>
                 </div>
                 <div className="banner__sidebar-single bg-grd-two">
-                  <h5 className="title-sm">Education & Experience</h5>
+                  <h5 className="title-sm">Education</h5>
                   <div className="banner__sidebar-experience fade-top">
                     <div className="time-frame">
                       <span className="text-xs">2020</span>
