@@ -118,7 +118,7 @@ const AboutMain = () => {
                       target="_blank"
                     >
                       <i className="fa-solid fa-location-dot"></i>
-                      Maglaj, Domislica bb
+                      Maglaj 74250
                     </Link>
                   </li>
                   <li>
