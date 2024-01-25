@@ -55,31 +55,6 @@ const BannerOne = () => {
   const triggerRef = useRef<HTMLDivElement | null>(null);
   const endTriggerRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    const metaElement = triggerRef.current;
-
-    if (metaElement) {
-      const pin = gsap.to(metaElement.querySelector("h2"), {
-        y: "-200px",
-        opacity: 0.8,
-        duration: 3.5,
-        scrollTrigger: {
-          trigger: triggerRef.current,
-          endTrigger: endTriggerRef.current,
-          scrub: 1,
-          start: "top top",
-          end: "bottom bottom",
-          markers: false,
-          pin: true,
-        },
-      });
-
-      return () => {
-        pin.kill();
-      };
-    }
-  }, []);
-
   return (
     <section className="banner" ref={endTriggerRef}>
       <div className="container">
@@ -158,7 +133,7 @@ const BannerOne = () => {
                 <p className="text-senary tertiary-text">
                   &copy; All Rights Reserved{" "}
                   <Link href="/" className="fw-6">
-                    Exgrid
+                    CA DEV
                   </Link>
                 </p>
               </div>
@@ -251,8 +226,17 @@ const BannerOne = () => {
                       <h2 className="title-lg">Now</h2>
                     </div>
                     <div className="righter">
-                      <h2 className="title-lg">Design Lead</h2>
-                      <p>Fantasy Interactive</p>
+                      <h2 className="title-lg">Director - since 2021</h2>
+                      <p>CA DEV</p>
+                    </div>
+                  </div>
+                  <div className="banner__history-single fade-top">
+                    <div className="lefter">
+                      <h2 className="title-lg">2023</h2>
+                    </div>
+                    <div className="righter">
+                      <h2 className="title-lg">Full Stack Developer</h2>
+                      <p>Karriera</p>
                     </div>
                   </div>
                   <div className="banner__history-single fade-top">
@@ -260,17 +244,8 @@ const BannerOne = () => {
                       <h2 className="title-lg">2021</h2>
                     </div>
                     <div className="righter">
-                      <h2 className="title-lg">Marketing Expert</h2>
-                      <p>Fantasy Interactive</p>
-                    </div>
-                  </div>
-                  <div className="banner__history-single fade-top">
-                    <div className="lefter">
-                      <h2 className="title-lg">2020</h2>
-                    </div>
-                    <div className="righter">
-                      <h2 className="title-lg">Senior Developer</h2>
-                      <p>Fantasy Interactive</p>
+                      <h2 className="title-lg">Full Stack Developer</h2>
+                      <p>Osterus GMBH</p>
                     </div>
                   </div>
                   <div className="banner__history-single fade-top">
@@ -278,8 +253,8 @@ const BannerOne = () => {
                       <h2 className="title-lg">2017</h2>
                     </div>
                     <div className="righter">
-                      <h2 className="title-lg">Lead Architecture</h2>
-                      <p>Fantasy Interactive</p>
+                      <h2 className="title-lg">Software Developer</h2>
+                      <p>Freelancer</p>
                     </div>
                   </div>
                 </div>
@@ -331,52 +306,44 @@ const BannerOne = () => {
                     <div className="time-frame">
                       <span className="text-xs">2020</span>
                       <span className="text-xs">-</span>
-                      <span className="text-xs">Present</span>
+                      <span className="text-xs">2020</span>
                     </div>
-                    <p className="designation text-quaternary">
-                      Desinger & Developer
-                    </p>
+                    <p className="designation text-quaternary">Maglaj</p>
                     <p className="ins-name text-quaternary text-xs">
-                      Brunodee Agency
+                      nSoft Full Stack dev-hive
                     </p>
                   </div>
                   <div className="banner__sidebar-experience fade-top">
                     <div className="time-frame">
-                      <span className="text-xs">2020</span>
+                      <span className="text-xs">2016</span>
                       <span className="text-xs">-</span>
-                      <span className="text-xs">Present</span>
+                      <span className="text-xs">2020</span>
                     </div>
-                    <p className="designation text-quaternary">
-                      Webflow Developer
-                    </p>
+                    <p className="designation text-quaternary">Doboj</p>
                     <p className="ins-name text-quaternary text-xs">
-                      brain craft inc
+                      information technology
                     </p>
                   </div>
                   <div className="banner__sidebar-experience fade-top">
                     <div className="time-frame">
-                      <span className="text-xs">2020</span>
+                      <span className="text-xs">2012</span>
                       <span className="text-xs">-</span>
-                      <span className="text-xs">Present</span>
+                      <span className="text-xs">2016</span>
                     </div>
-                    <p className="designation text-quaternary">
-                      Desinger & Developer
-                    </p>
+                    <p className="designation text-quaternary">Maglaj</p>
                     <p className="ins-name text-quaternary text-xs">
-                      slicly agency
+                      Gymnasium
                     </p>
                   </div>
                   <div className="banner__sidebar-experience fade-top">
                     <div className="time-frame">
-                      <span className="text-xs">2020</span>
+                      <span className="text-xs">2005</span>
                       <span className="text-xs">-</span>
-                      <span className="text-xs">Present</span>
+                      <span className="text-xs">2012</span>
                     </div>
-                    <p className="designation text-quaternary">
-                      Leader Team of Marketing
-                    </p>
+                    <p className="designation text-quaternary">Novi Šeher</p>
                     <p className="ins-name text-quaternary text-xs">
-                      Brunodee Agency
+                      Elementary School
                     </p>
                   </div>
                 </div>
@@ -386,7 +353,7 @@ const BannerOne = () => {
         </div>
       </div>
       <div className="tag-t" ref={triggerRef}>
-        <h2 ref={contentRef}>EXGRID</h2>
+        <h2 ref={contentRef}>CA DEV</h2>
       </div>
     </section>
   );

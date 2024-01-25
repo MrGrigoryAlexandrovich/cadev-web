@@ -95,7 +95,7 @@ const FooterFive = () => {
                   &copy; <span id="copyYear">{currentYear}</span>. All Rights
                   Reserved{" "}
                   <Link href="/" className="fw-6">
-                    Exgrid
+                    CA DEV
                   </Link>
                 </p>
               </div>

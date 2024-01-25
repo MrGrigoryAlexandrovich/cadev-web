@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "public/images/logo.png";
+import logo from "@/assets/logo.png";
 import one from "public/images/project/one.png";
 import two from "public/images/project/two.png";
 import three from "public/images/project/three.png";

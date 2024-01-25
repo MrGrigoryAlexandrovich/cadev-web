@@ -34,7 +34,6 @@ const Layout = ({
   handleMouseEnterTitle,
   handleMouseLeaveTitle,
 }: LayoutProps) => {
-
   // navbar
   const [openNav, setOpenNav] = useState(false);
 
@@ -214,8 +213,11 @@ const Layout = ({
           href="/images/favicon.png"
           type="image/x-icon"
         />
-        <title>Exgrid | Personal Portfolio React NextJs Template</title>
-        <meta name="keywords" content="personal, portfolio, react" />
+        <title>Software Development</title>
+        <meta
+          name="keywords"
+          content="software, development, web, software-development, appliation, mobile, desktop"
+        />
         <meta
           name="description"
           content="Personal Portfolio React NextJs Template"
