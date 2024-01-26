@@ -90,13 +90,13 @@ const BannerThree = () => {
             <div className="banner-three__meta">
               <div className="banner-three__meta-left">
                 <div className="thumb">
-                  <Link href="about-me">
+                  <Link href="about-us">
                     <Image src={avatartwo} alt="Image" />
                   </Link>
                 </div>
                 <div className="content">
                   <h4 className="title-md fw-7">
-                    <Link href="about-me">Patricia D. Razo</Link>
+                    <Link href="about-us">Patricia D. Razo</Link>
                   </h4>
                   <p>
                     <Link

@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import groupOfficeOne from "@/assets/groupOfficeOne.jpg";
+import groupOfficeTwo from "@/assets/groupOfficeTwo.jpg";
+import groupOfficeThree from "@/assets/groupOfficeThree.jpg";
+import groupOfficeFour from "@/assets/groupOfficeFour.jpg";
 import "swiper/swiper-bundle.css";
-import awone from "public/images/aw-one.png";
-import awtwo from "public/images/aw-two.png";
 
 const AwardsAchievement = () => {
   return (
@@ -17,7 +18,9 @@ const AwardsAchievement = () => {
               <div className="row align-items-center gaper">
                 <div className="col-12 col-lg-6">
                   <div className="section__header mb-0 text-center text-lg-start">
-                    <h2 className="title-xl title-anim">Awards Achievement</h2>
+                    <h2 className="title-xl title-anim">
+                      The secret to success
+                    </h2>
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">
@@ -59,25 +62,18 @@ const AwardsAchievement = () => {
                 <SwiperSlide>
                   <div className="awards__slider-single">
                     <div className="bn-about-thumb">
-                      <Image src={awone} alt="Image" />
-                      <Link
-                        href="https://www.youtube.com"
-                        className="yt"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-youtube"></i>
-                      </Link>
+                      <Image src={groupOfficeFour} priority alt="Image" />
                     </div>
                     <div className="bn-about__content">
                       <div className="bn-about__content-left">
-                        <h3 className="title-lg">Awwwards.</h3>
+                        <h3 className="title-lg">Leadership</h3>
                       </div>
                       <div className="bn-about__content-right">
                         <ul>
-                          <li>site of the day portfolio (2020)</li>
-                          <li>best website content (2021)</li>
-                          <li>up labs contest winning (2022)</li>
-                          <li>site of the day portfolio (2020)</li>
+                          <li>Set clear goals and expectations</li>
+                          <li>Create a positive and supportive environment</li>
+                          <li>Delegate effectively</li>
+                          <li>Be a role model</li>
                         </ul>
                       </div>
                     </div>
@@ -86,25 +82,18 @@ const AwardsAchievement = () => {
                 <SwiperSlide>
                   <div className="awards__slider-single">
                     <div className="bn-about-thumb">
-                      <Image src={awtwo} alt="Image" />
-                      <Link
-                        href="https://www.youtube.com/"
-                        className="yt"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-youtube"></i>
-                      </Link>
+                      <Image src={groupOfficeOne} priority alt="Image" />
                     </div>
                     <div className="bn-about__content">
                       <div className="bn-about__content-left">
-                        <h3 className="title-lg">Awwwards.</h3>
+                        <h3 className="title-lg">Programming skills</h3>
                       </div>
                       <div className="bn-about__content-right">
                         <ul>
-                          <li>site of the day portfolio (2020)</li>
-                          <li>best website content (2021)</li>
-                          <li>up labs contest winning (2022)</li>
-                          <li>site of the day portfolio (2020)</li>
+                          <li>Lightning-fast performance</li>
+                          <li>Rocketfuel Apps</li>
+                          <li>Attention to detail</li>
+                          <li>Quality code</li>
                         </ul>
                       </div>
                     </div>
@@ -113,25 +102,18 @@ const AwardsAchievement = () => {
                 <SwiperSlide>
                   <div className="awards__slider-single">
                     <div className="bn-about-thumb">
-                      <Image src={awone} alt="Image" />
-                      <Link
-                        href="https://www.youtube.com/"
-                        className="yt"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-youtube"></i>
-                      </Link>
+                      <Image src={groupOfficeThree} priority alt="Image" />
                     </div>
                     <div className="bn-about__content">
                       <div className="bn-about__content-left">
-                        <h3 className="title-lg">Awwwards.</h3>
+                        <h3 className="title-lg">IT Consulting</h3>
                       </div>
                       <div className="bn-about__content-right">
                         <ul>
-                          <li>site of the day portfolio (2020)</li>
-                          <li>best website content (2021)</li>
-                          <li>up labs contest winning (2022)</li>
-                          <li>site of the day portfolio (2020)</li>
+                          <li>Improved IT performance</li>
+                          <li>Increased business agility</li>
+                          <li>Reduced costs</li>
+                          <li>Increased innovation</li>
                         </ul>
                       </div>
                     </div>
@@ -140,25 +122,18 @@ const AwardsAchievement = () => {
                 <SwiperSlide>
                   <div className="awards__slider-single">
                     <div className="bn-about-thumb">
-                      <Image src={awtwo} alt="Image" />
-                      <Link
-                        href="https://www.youtube.com/"
-                        className="yt"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-youtube"></i>
-                      </Link>
+                      <Image src={groupOfficeTwo} priority alt="Image" />
                     </div>
                     <div className="bn-about__content">
                       <div className="bn-about__content-left">
-                        <h3 className="title-lg">Awwwards.</h3>
+                        <h3 className="title-lg">Maintenance</h3>
                       </div>
                       <div className="bn-about__content-right">
                         <ul>
-                          <li>site of the day portfolio (2020)</li>
-                          <li>best website content (2021)</li>
-                          <li>up labs contest winning (2022)</li>
-                          <li>site of the day portfolio (2020)</li>
+                          <li>Enhanced Stability and Reliability</li>
+                          <li>Improved Performance and Efficiency</li>
+                          <li>Enhanced Security</li>
+                          <li>Reduced Development Costs</li>
                         </ul>
                       </div>
                     </div>

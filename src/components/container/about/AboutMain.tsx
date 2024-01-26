@@ -224,7 +224,7 @@ const AboutMain = () => {
                 </div>
                 <div className="skill-bar-single">
                   <div className="skill-bar-title">
-                    <p>Naintenance</p>
+                    <p>Maintenance</p>
                     <span className="percent-value"></span>
                   </div>
                   <div className="skill-bar-wrapper" data-percent="100%">

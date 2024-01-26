@@ -151,7 +151,7 @@ const HeaderFour = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                     </ul>
                   </li>
                   <li className="navbar__item nav-fade">
-                    <Link href="about-me">About Me</Link>
+                    <Link href="about-us">About Us</Link>
                   </li>
                   <li className="navbar__item navbar__item--has-children nav-fade">
                     <button

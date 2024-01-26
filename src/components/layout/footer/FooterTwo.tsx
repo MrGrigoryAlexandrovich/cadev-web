@@ -23,7 +23,7 @@ const FooterTwo = () => {
                     <div className="section__content-cta">
                       <div className="meta">
                         <div className="thumb">
-                          <Link href="about-me">
+                          <Link href="about-us">
                             <Image src={avatar} alt="Image" />
                           </Link>
                         </div>

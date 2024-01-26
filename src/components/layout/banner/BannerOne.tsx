@@ -72,7 +72,7 @@ const BannerOne = () => {
                   </div>
                   <div className="content">
                     <p className="title-sm fw-7">
-                      <Link href="about-me">Ahmed Cvrčak</Link>
+                      <Link href="about-us">Ahmed Cvrčak</Link>
                     </p>
                     <p className="text-sm text-quaternary d-flex align-items-center fw-7">
                       <i className="fa-solid fa-briefcase"></i>

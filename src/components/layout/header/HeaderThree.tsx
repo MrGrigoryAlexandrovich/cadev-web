@@ -112,7 +112,7 @@ const HeaderThree = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">
-                        <Link href="about-me">About Me</Link>
+                        <Link href="about-us">About us</Link>
                       </li>
                       <li className="navbar__item navbar__item--has-children nav-fade">
                         <button
@@ -244,7 +244,7 @@ const HeaderThree = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                 </ul>
               </li>
               <li className="navbar__item nav-fade">
-                <Link href="about-me">About Me</Link>
+                <Link href="about-us">About Us</Link>
               </li>
               <li className="navbar__item navbar__item--has-children nav-fade">
                 <button
@@ -262,25 +262,6 @@ const HeaderThree = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                   </li>
                   <li>
                     <Link href="service-single">Service Details</Link>
-                  </li>
-                </ul>
-              </li>
-              <li className="navbar__item navbar__item--has-children nav-fade">
-                <button
-                  aria-label="dropdown menu"
-                  className={`navbar__dropdown-label ${isSubMenuButton(
-                    "case"
-                  )}`}
-                  onClick={() => handleSubmenu("case")}
-                >
-                  Case Study
-                </button>
-                <ul className={`navbar__sub-menu ${isSubMenuOpen("case")}`}>
-                  <li>
-                    <Link href="case-study">Case Study</Link>
-                  </li>
-                  <li>
-                    <Link href="case-study-single">Case Study Details</Link>
                   </li>
                 </ul>
               </li>
