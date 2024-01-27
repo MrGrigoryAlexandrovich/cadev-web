@@ -220,8 +220,26 @@ const Layout = ({
         />
         <meta
           name="description"
-          content="Personal Portfolio React NextJs Template"
+          content="Software Sorcerers: We enchant your digital world."
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Software Development" />
+        <meta
+          property="og:description"
+          content="Software Sorcerers: We enchant your digital world."
+        />
+        <meta property="og:image" content="@/assets/logo.png" />
+        <meta property="twitter:card" content="@/assets/logo.png" />
+        <meta
+          property="twitter:title"
+          content="Stellenanzeigen kostenlos veröffentlichen"
+        />
+        <meta
+          property="twitter:description"
+          content="Software Sorcerers: We enchant your digital world."
+        />
+        <meta property="twitter:image" content="@/assets/logo.png" />
+        <meta name="image" property="og:image" content="@/assets/logo.png" />
       </Head>
       <div className={`${combinedClasses}${openNav ? " body-active" : " "}`}>
         {header === 1 && (
