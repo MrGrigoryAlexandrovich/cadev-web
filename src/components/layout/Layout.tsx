@@ -228,8 +228,14 @@ const Layout = ({
           property="og:description"
           content="Software Sorcerers: We enchant your digital world."
         />
-        <meta property="og:image" content="@/assets/logo.png" />
-        <meta property="twitter:card" content="@/assets/logo.png" />
+        <meta
+          property="og:image"
+          content="https://www.ca-development.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.fb895247.png&w=2048&q=75"
+        />
+        <meta
+          property="twitter:card"
+          content="https://www.ca-development.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.fb895247.png&w=2048&q=75"
+        />
         <meta
           property="twitter:title"
           content="Stellenanzeigen kostenlos veröffentlichen"
@@ -238,8 +244,15 @@ const Layout = ({
           property="twitter:description"
           content="Software Sorcerers: We enchant your digital world."
         />
-        <meta property="twitter:image" content="@/assets/logo.png" />
-        <meta name="image" property="og:image" content="@/assets/logo.png" />
+        <meta
+          property="twitter:image"
+          content="https://www.ca-development.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.fb895247.png&w=2048&q=75"
+        />
+        <meta
+          name="image"
+          property="og:image"
+          content="https://www.ca-development.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.fb895247.png&w=2048&q=75"
+        />
       </Head>
       <div className={`${combinedClasses}${openNav ? " body-active" : " "}`}>
         {header === 1 && (
