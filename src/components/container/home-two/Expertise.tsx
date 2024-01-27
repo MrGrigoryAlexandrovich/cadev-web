@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import php from "public/images/expertise/php.png";
-import py from "public/images/expertise/py.png";
-import word from "public/images/expertise/word.png";
-import java from "public/images/expertise/java.png";
-import flu from "public/images/expertise/flu.png";
+import htmlLogo from "@/assets/html-logo.png";
+import cssLogo from "@/assets/css-logo.png";
+import javascriptLogo from "@/assets/js-logo.png";
+import reactLogo from "@/assets/react-logo.png";
+import nodeLogo from "@/assets/node-logo.png";
+import nextLogo from "@/assets/next-logo.png";
 
 const Expertise = () => {
   return (
-    <section className="pt-120  expertise fade-wrapper">
+    <section className="pt-120 pb-5 expertise fade-wrapper">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12 col-lg-6">
@@ -16,7 +17,9 @@ const Expertise = () => {
               <span className="sub-title text-capitalize">
                 explore my expertise !
               </span>
-              <h2 className="title-xl fw-5 reveal-title">My Advantages</h2>
+              <h2 className="title-xl fw-5 reveal-title">
+                Common Technologies
+              </h2>
             </div>
           </div>
         </div>
@@ -24,78 +27,60 @@ const Expertise = () => {
           <div className="col-12 col-sm-6 col-lg-3 col-xxl-2">
             <div className="expertise__single text-center fade-top">
               <div className="thumb">
-                <Image src={php} alt="Image" />
+                <Image src={htmlLogo} priority alt="Image" />
               </div>
               <div className="content">
-                <h4 className="title-md">php 6.0.2</h4>
-                <div className="section__content-cta">
-                  <i className="fa-solid fa-ellipsis"></i>
-                </div>
+                <h4 className="title-md">HTML</h4>
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-lg-3 col-xxl-2">
             <div className="expertise__single text-center fade-top">
               <div className="thumb">
-                <Image src={php} alt="Image" />
+                <Image src={cssLogo} alt="Image" />
               </div>
               <div className="content">
-                <h4 className="title-md">php 6.0.2</h4>
-                <div className="section__content-cta">
-                  <i className="fa-solid fa-ellipsis"></i>
-                </div>
+                <h4 className="title-md">CSS</h4>
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-lg-3 col-xxl-2">
             <div className="expertise__single text-center fade-top">
               <div className="thumb">
-                <Image src={py} alt="Image" />
+                <Image src={javascriptLogo} alt="Image" />
               </div>
               <div className="content">
-                <h4 className="title-md">python 3.0</h4>
-                <div className="section__content-cta">
-                  <i className="fa-solid fa-ellipsis"></i>
-                </div>
+                <h4 className="title-md">Javascript</h4>
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-lg-3 col-xxl-2">
             <div className="expertise__single text-center fade-top">
               <div className="thumb">
-                <Image src={word} alt="Image" />
+                <Image src={reactLogo} alt="Image" />
               </div>
               <div className="content">
-                <h4 className="title-md">WordPress</h4>
-                <div className="section__content-cta">
-                  <i className="fa-solid fa-ellipsis"></i>
-                </div>
+                <h4 className="title-md">React</h4>
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-lg-3 col-xxl-2">
             <div className="expertise__single text-center fade-top">
               <div className="thumb">
-                <Image src={java} alt="Image" />
+                <Image src={nodeLogo} alt="Image" />
               </div>
               <div className="content">
-                <h4 className="title-md">java script</h4>
-                <div className="section__content-cta">
-                  <i className="fa-solid fa-ellipsis"></i>
-                </div>
+                <h4 className="title-md">Node</h4>
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-lg-3 col-xxl-2">
             <div className="expertise__single text-center fade-top">
               <div className="thumb">
-                <Image src={flu} alt="Image" />
+                <Image src={nextLogo} alt="Image" />
               </div>
               <div className="content">
-                <h4 className="title-md">Flutter App</h4>
-                <div className="section__content-cta">
-                  <i className="fa-solid fa-ellipsis"></i>
-                </div>
+                <h4 className="title-md">Next</h4>
               </div>
             </div>
           </div>
