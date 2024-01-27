@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import hrone from "public/images/projects/hr-one.png";
-import hrtwo from "public/images/projects/hr-two.png";
-import hrthree from "public/images/projects/hr-three.png";
-import hrfour from "public/images/projects/hr-four.png";
-import hrfive from "public/images/projects/hr-five.png";
-import hrsix from "public/images/projects/hr-six.png";
+import webDevelopment from "@/assets/web-development.avif";
+import mobileDevelopment from "@/assets/mobile-development.jpg";
+import desktopDevelopment from "@/assets/desktop-development.avif";
+import developmentCoaching from "@/assets/development-coaching.jpg";
+import itConsulting from "@/assets/it-consulting.png";
+import maintenance from "@/assets/maintenance.jpg";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const ServicesMain = () => {
@@ -45,193 +45,93 @@ const ServicesMain = () => {
     <section className="pb-120 project-sl" ref={slider}>
       <div className="project-sl__single">
         <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrone} alt="Image" priority />
-          </Link>
+          <a>
+            <Image src={webDevelopment} alt="Image" priority />
+          </a>
         </div>
         <div className="content">
           <h2>
-            <Link href="service-single">
+            <a>
+              web app
+              <br />
+              development
+            </a>
+          </h2>
+        </div>
+      </div>
+      <div className="project-sl__single">
+        <div className="thumb">
+          <a>
+            <Image src={mobileDevelopment} alt="Image" priority />
+          </a>
+        </div>
+        <div className="content">
+          <h2>
+            <a>
               mobile app
               <br />
               development
-            </Link>
+            </a>
           </h2>
         </div>
       </div>
       <div className="project-sl__single">
         <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrtwo} alt="Image" priority />
-          </Link>
+          <a>
+            <Image src={desktopDevelopment} alt="Image" priority />
+          </a>
         </div>
         <div className="content">
           <h2>
-            <Link href="service-single">
-              brand identity
-              <br />
-              difference
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrthree} alt="Image" priority />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="service-single">
-              marketing app
-              <br />
-              solutions
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrfour} alt="Image" priority />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="service-single">
-              LMS web app
-              <br />
-              lication
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrfive} alt="Image" priority />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="service-single">
-              brand identity
-              <br />
-              difference
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrsix} alt="Image" priority />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="service-single">
-              digital website
+            <a>
+              desktop app
               <br />
               development
-            </Link>
+            </a>
           </h2>
         </div>
       </div>
       <div className="project-sl__single">
         <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrone} alt="Image" priority />
-          </Link>
+          <a>
+            <Image src={developmentCoaching} alt="Image" priority />
+          </a>
         </div>
         <div className="content">
           <h2>
-            <Link href="service-single">
-              mobile app
-              <br />
+            <a>
               development
-            </Link>
+              <br />
+              coaching
+            </a>
           </h2>
         </div>
       </div>
       <div className="project-sl__single">
         <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrtwo} alt="Image" priority />
-          </Link>
+          <a>
+            <Image src={itConsulting} alt="Image" priority />
+          </a>
         </div>
         <div className="content">
           <h2>
-            <Link href="service-single">
-              brand identity
+            <a>
+              IT
               <br />
-              difference
-            </Link>
+              Consulting
+            </a>
           </h2>
         </div>
       </div>
       <div className="project-sl__single">
         <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrthree} alt="Image" priority />
-          </Link>
+          <a>
+            <Image src={maintenance} alt="Image" priority />
+          </a>
         </div>
         <div className="content">
           <h2>
-            <Link href="service-single">
-              marketing app
-              <br />
-              solutions
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrfour} alt="Image" priority />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="service-single">
-              LMS web app
-              <br />
-              lication
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrfive} alt="Image" priority />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="service-single">
-              brand identity
-              <br />
-              difference
-            </Link>
-          </h2>
-        </div>
-      </div>
-      <div className="project-sl__single">
-        <div className="thumb">
-          <Link href="service-single">
-            <Image src={hrsix} alt="Image" priority />
-          </Link>
-        </div>
-        <div className="content">
-          <h2>
-            <Link href="service-single">
-              digital website
-              <br />
-              development
-            </Link>
+            <a>Maintence</a>
           </h2>
         </div>
       </div>

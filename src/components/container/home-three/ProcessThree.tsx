@@ -10,7 +10,7 @@ const ProcessThree = () => {
           <div className="col-12 col-lg-6 col-xxl-5 offset-xxl-1">
             <div className="process__content">
               <div className="section__header">
-                <span className="subtitle">My Working Process</span>
+                <span className="subtitle">How do we work ?</span>
                 <h4 className="title-md title-anim">
                   Your Dream Website In Just Few Steps
                 </h4>
@@ -19,22 +19,26 @@ const ProcessThree = () => {
                 <div className="process__single fade-top">
                   <h4 className="title-md">concept</h4>
                   <p className="text-md senary-color">
-                    During the concept phase, I work closely with my clients to
-                    understand their needs and goals for their website.
+                    Let's crack the code together. We'll listen deeply, unearth
+                    your hidden desires, and refine raw goals into a dazzling
+                    software vision.
                   </p>
                 </div>
                 <div className="process__single fade-top">
                   <h4 className="title-md">design</h4>
                   <p className="text-md senary-color">
-                    During the concept phase, I work closely with my clients to
-                    understand their needs and goals for their website.
+                    Co-piloting your dream: we'll sculpt user experiences, craft
+                    features that sing, and build the sleek engine that powers
+                    your software to life.
                   </p>
                 </div>
                 <div className="process__single fade-top">
                   <h4 className="title-md">development</h4>
                   <p className="text-md senary-color">
-                    During the concept phase, I work closely with my clients to
-                    understand their needs and goals for their website.
+                    Your software bursts into life! Each brushstroke, each line
+                    of code, builds a masterpiece we unveil bit by bit, keeping
+                    you on the edge of your seat. Let's paint this vision
+                    together.
                   </p>
                 </div>
               </div>
