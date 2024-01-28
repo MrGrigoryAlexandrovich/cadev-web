@@ -175,8 +175,8 @@ const HeaderThree = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                       className="btn anim-btn btn--tertiary d-none d-md-block"
                     >
                       <i className="fa-solid fa-paper-plane"></i>
-                      <span className="btn-m">Hire Me</span>
-                      <span className="btn-anim">Hire Me</span>
+                      <span className="btn-m">Hire Us</span>
+                      <span className="btn-anim">Hire Use</span>
                     </Link>
                     <button
                       className="open-mobile-menu animated-bar d-flex d-xl-none"

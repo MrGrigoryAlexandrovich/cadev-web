@@ -115,7 +115,7 @@ const BannerOne = () => {
                     href="contact-us"
                     className="fw-7 text-capitalize rt-btn"
                   >
-                    Hire Me
+                    Hire Us
                     <i className="fa-solid fa-circle-arrow-right"></i>
                   </Link>
                 </div>
@@ -190,8 +190,8 @@ const BannerOne = () => {
                         href="contact-us"
                         className="fw-7 text-capitalize anim-btn"
                       >
-                        <span className="btn-anim"> Hire Me</span>
-                        <span className="btn-m">hire me</span>
+                        <span className="btn-anim">Hire Us</span>
+                        <span className="btn-m">Hire Us</span>
                         <i className="fa-solid fa-circle-arrow-right"></i>
                       </Link>
                     </div>

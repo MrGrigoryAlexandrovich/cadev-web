@@ -23,8 +23,8 @@ const RecentTwo = () => {
                     href="contact-us"
                     className="btn anim-btn btn--secondary"
                   >
-                    <span className="btn-anim">Hire Me</span>
-                    <span className="btn-m">Hire Me</span>
+                    <span className="btn-anim">Hire Us</span>
+                    <span className="btn-m">Hire Us</span>
                     <i className="fa-solid fa-circle-arrow-right"></i>
                   </Link>
                 </div>
