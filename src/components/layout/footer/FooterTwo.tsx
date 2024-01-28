@@ -29,7 +29,7 @@ const FooterTwo = () => {
                         </div>
                         <h5 className="title-sm">
                           <span>SEND ME</span>{" "}
-                          <Link href="contact-me">
+                          <Link href="contact-us">
                             <span>A MESSAGE</span>
                           </Link>
                         </h5>

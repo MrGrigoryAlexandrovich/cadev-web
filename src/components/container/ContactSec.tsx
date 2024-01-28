@@ -1,12 +1,46 @@
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import emailjs from "@emailjs/browser";
 import phone from "public/images/phone.png";
 import mail from "public/images/mail.png";
 import location from "public/images/location.png";
 import time from "public/images/time.png";
 
 const ContactSec = () => {
+  const senderRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+
+  const sendMessage = () => {
+    const templateParams = {
+      sender: senderRef.current?.value,
+      email: emailRef.current?.value,
+      message: messageRef.current?.value,
+    };
+    emailjs
+      .send(
+        "service_ywxobl8",
+        "template_z3o2wxj",
+        templateParams,
+        "user_sMECxSGss2PbhW66dhkp5"
+      )
+      .then(
+        (response) => {
+          if (senderRef.current && emailRef.current && messageRef.current) {
+            senderRef.current.value = "";
+            emailRef.current.value = "";
+            messageRef.current.value = "";
+          }
+
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+          console.log("FAILED...", err);
+        }
+      );
+  };
+
   return (
     <section className="section contact-m fade-wrapper">
       <div className="container">
@@ -94,6 +128,7 @@ const ContactSec = () => {
                             name="contact-name"
                             id="contactName"
                             placeholder="Name"
+                            ref={senderRef}
                           />
                         </div>
                         <div className="group-input ">
@@ -102,6 +137,7 @@ const ContactSec = () => {
                             name="contact-email"
                             id="contactEmail"
                             placeholder="Email"
+                            ref={emailRef}
                           />
                         </div>
                       </div>
@@ -119,10 +155,15 @@ const ContactSec = () => {
                           name="contact-message"
                           id="contactMessage"
                           placeholder="Message"
+                          ref={messageRef}
                         ></textarea>
                       </div>
                       <div className="form-cta justify-content-start">
-                        <button type="button" className="btn">
+                        <button
+                          type="button"
+                          className="btn"
+                          onClick={sendMessage}
+                        >
                           Send Message
                         </button>
                       </div>

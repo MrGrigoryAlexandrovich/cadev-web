@@ -193,13 +193,13 @@ const HeaderFive = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">
-                        <Link href="contact-me">Contact</Link>
+                        <Link href="contact-us">Contact</Link>
                       </li>
                     </ul>
                   </div>
                   <div className="navbar__options">
                     <Link
-                      href="contact-me"
+                      href="contact-us"
                       className="btn btn--secondary d-none d-md-flex"
                     >
                       <i className="fa-solid fa-paper-plane"></i>
@@ -312,7 +312,7 @@ const HeaderFive = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                 </ul>
               </li>
               <li className="navbar__item nav-fade">
-                <Link href="contact-me">Contact</Link>
+                <Link href="contact-us">Contact</Link>
               </li>
             </ul>
           </div>

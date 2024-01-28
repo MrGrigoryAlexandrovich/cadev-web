@@ -112,7 +112,7 @@ const BannerOne = () => {
                 </div>
                 <div className="banner__meta-btn">
                   <Link
-                    href="contact-me"
+                    href="contact-us"
                     className="fw-7 text-capitalize rt-btn"
                   >
                     Hire Me
@@ -187,7 +187,7 @@ const BannerOne = () => {
                     </div>
                     <div className="cta-single">
                       <Link
-                        href="contact-me"
+                        href="contact-us"
                         className="fw-7 text-capitalize anim-btn"
                       >
                         <span className="btn-anim"> Hire Me</span>

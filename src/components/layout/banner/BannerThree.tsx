@@ -146,7 +146,7 @@ const BannerThree = () => {
                 </div>
                 <div className="available-btn">
                   <Link
-                    href="contact-me"
+                    href="contact-us"
                     className="btn btn--tertiary anim-btn"
                   >
                     <span className="btn-m">Available now</span>

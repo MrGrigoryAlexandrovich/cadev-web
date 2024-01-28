@@ -23,7 +23,7 @@ const BannerFive = () => {
                       </span>
                     </div>
                     <h1 className="light-title-sm title-anim">
-                      Get Treatment For All Your {" "}
+                      Get Treatment For All Your{" "}
                       <span className="fw-7 text-quinary">
                         Mental Healthcare
                       </span>
@@ -33,7 +33,7 @@ const BannerFive = () => {
                     </p>
                     <div className="section__content-cta">
                       <Link
-                        href="contact-me"
+                        href="contact-us"
                         className="btn btn--secondary anim-btn"
                       >
                         <span className="btn-anim">book online</span>

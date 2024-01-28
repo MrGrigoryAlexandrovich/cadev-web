@@ -20,7 +20,7 @@ const RecentTwo = () => {
               <div className="section__content-cta">
                 <div className="section__content-cta">
                   <Link
-                    href="contact-me"
+                    href="contact-us"
                     className="btn anim-btn btn--secondary"
                   >
                     <span className="btn-anim">Hire Me</span>

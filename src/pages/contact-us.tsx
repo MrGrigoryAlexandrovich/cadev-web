@@ -6,7 +6,7 @@ import ContactSec from "@/components/container/ContactSec";
 const ContactMe = () => {
   return (
     <Layout header={1} footer={1}>
-      <CmnBanner title="Contact Me" navigation="Contact Me" />
+      <CmnBanner title="Contact Us" navigation="Contact Us" />
       <ContactSec />
     </Layout>
   );

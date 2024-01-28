@@ -14,7 +14,7 @@ const FooterThree = () => {
                 Let&apos;s Make Some Magic ✨ Happen And Show The World What
                 Your Brand Is All About!
               </h2>
-              <Link href="contact-me" className="footer__thumb ft">
+              <Link href="contact-us" className="footer__thumb ft">
                 <span className="title-md">Let&apos;s talk</span>
               </Link>
               <p className="text-center let fw-5 text-capitalize">

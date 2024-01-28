@@ -200,7 +200,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">
-                        <Link href="contact-me">Contact</Link>
+                        <Link href="contact-us">Contact</Link>
                       </li>
                     </ul>
                   </div>
@@ -320,7 +320,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                 </ul>
               </li>
               <li className="navbar__item nav-fade">
-                <Link href="contact-me">Contact</Link>
+                <Link href="contact-us">Contact</Link>
               </li>
             </ul>
           </div>
