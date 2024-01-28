@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import avatar from "public/images/avatar.png";
+import director from "@/assets/director.jpeg";
 
 const FooterTwo = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +15,7 @@ const FooterTwo = () => {
               <div className="row justify-content-center">
                 <div className="col-12 col-lg-8 col-xxl-8">
                   <div className="section__header text-center">
-                    <span className="sub-title">Contact me</span>
+                    <span className="sub-title">Contact us</span>
                     <h2 className="title-xxl title-anim">
                       Let&apos;s Create Together A Unique Site That Looks Like
                       You.
@@ -24,7 +24,7 @@ const FooterTwo = () => {
                       <div className="meta">
                         <div className="thumb">
                           <Link href="about-us">
-                            <Image src={avatar} alt="Image" />
+                            <Image src={director} alt="Image" />
                           </Link>
                         </div>
                         <h5 className="title-sm">
@@ -59,7 +59,10 @@ const FooterTwo = () => {
                 >
                   <i className="fa-brands fa-instagram"></i>
                 </Link>
-                <Link href="https://www.facebook.com/" target="_blank">
+                <Link
+                  href="https://www.facebook.com/cvrcak.ahmed/"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-facebook-messenger"></i>
                 </Link>
               </div>

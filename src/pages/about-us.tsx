@@ -52,7 +52,7 @@ const AboutMe = () => {
   ];
 
   return (
-    <Layout header={1} footer={1}>
+    <Layout header={1} footer={2}>
       <AboutMain />
       <AwardsAchievement title="The secret to success" items={secretItems} />
     </Layout>

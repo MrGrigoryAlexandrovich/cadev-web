@@ -22,6 +22,7 @@ const ContactSec = () => {
           .string()
           .required("Field is required")
           .email("Invalid email"),
+        subject: yup.string().required("Field is required"),
       })
       .required();
 
@@ -38,6 +39,7 @@ const ContactSec = () => {
       name: "",
       message: "",
       email: "",
+      subject: "",
     },
   });
 
@@ -45,6 +47,7 @@ const ContactSec = () => {
     const templateParams = {
       sender: getValues().name,
       email: getValues().email,
+      subject: getValues().subject,
       message: getValues().message,
     };
     emailjs
@@ -184,14 +187,21 @@ const ContactSec = () => {
                           />
                         </div>
                       </div>
-                      <div className="group-input drt">
-                        <select className="subject">
-                          <option data-display="Subject">Subject</option>
-                          <option value="1">Account</option>
-                          <option value="2">Service</option>
-                          <option value="3">Pricing</option>
-                          <option value="4">Support</option>
-                        </select>
+                      <div className="group-input">
+                        <Controller
+                          name={"subject"}
+                          control={control}
+                          render={({ field: { onChange, value } }) => (
+                            <input
+                              type="text"
+                              onChange={onChange}
+                              value={value}
+                              name="subject-email"
+                              className={errors.subject && "error-field"}
+                              placeholder="Subject"
+                            />
+                          )}
+                        />
                       </div>
                       <div className="group-input">
                         <Controller
