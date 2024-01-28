@@ -1,22 +1,51 @@
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
+import * as yup from "yup";
+import { Controller, useForm } from "react-hook-form";
+import { Toaster, toast } from "sonner";
+import { yupResolver } from "@hookform/resolvers/yup";
 import phone from "public/images/phone.png";
 import mail from "public/images/mail.png";
 import location from "public/images/location.png";
 import time from "public/images/time.png";
 
 const ContactSec = () => {
-  const senderRef = useRef<HTMLInputElement>(null);
-  const emailRef = useRef<HTMLInputElement>(null);
-  const messageRef = useRef<HTMLTextAreaElement>(null);
+  const getFormSettings = () =>
+    yup
+      .object()
+      .shape({
+        name: yup.string().required("Field is required"),
+        message: yup.string().required("Field is required"),
+        email: yup
+          .string()
+          .required("Field is required")
+          .email("Invalid email"),
+      })
+      .required();
+
+  const {
+    control,
+    formState: { errors },
+    getValues,
+    handleSubmit,
+    reset,
+  } = useForm({
+    mode: "onChange",
+    resolver: yupResolver(getFormSettings()),
+    defaultValues: {
+      name: "",
+      message: "",
+      email: "",
+    },
+  });
 
   const sendMessage = () => {
     const templateParams = {
-      sender: senderRef.current?.value,
-      email: emailRef.current?.value,
-      message: messageRef.current?.value,
+      sender: getValues().name,
+      email: getValues().email,
+      message: getValues().message,
     };
     emailjs
       .send(
@@ -26,14 +55,9 @@ const ContactSec = () => {
         "user_sMECxSGss2PbhW66dhkp5"
       )
       .then(
-        (response) => {
-          if (senderRef.current && emailRef.current && messageRef.current) {
-            senderRef.current.value = "";
-            emailRef.current.value = "";
-            messageRef.current.value = "";
-          }
-
-          console.log("SUCCESS!", response.status, response.text);
+        () => {
+          reset();
+          toast.success("Your email has been sent successfully.");
         },
         (err) => {
           console.log("FAILED...", err);
@@ -43,6 +67,7 @@ const ContactSec = () => {
 
   return (
     <section className="section contact-m fade-wrapper">
+      <Toaster position="top-right" />
       <div className="container">
         <div className="row gaper">
           <div className="col-12 col-sm-6 col-xl-3">
@@ -120,24 +145,42 @@ const ContactSec = () => {
                 <div className="col-12 col-lg-6">
                   <div className="contact-main__form  fade-top">
                     <h3>Leave A Message</h3>
-                    <form className="section__content-cta">
+                    <form
+                      onSubmit={handleSubmit(sendMessage)}
+                      className="section__content-cta"
+                      id="contact-form"
+                    >
                       <div className="group-wrapper">
-                        <div className="group-input ">
-                          <input
-                            type="text"
-                            name="contact-name"
-                            id="contactName"
-                            placeholder="Name"
-                            ref={senderRef}
+                        <div className="group-input">
+                          <Controller
+                            name={"name"}
+                            control={control}
+                            render={({ field: { onChange, value } }) => (
+                              <input
+                                onChange={onChange}
+                                value={value}
+                                type="text"
+                                name="contact-name"
+                                className={errors.name && "error-field"}
+                                placeholder="Name"
+                              />
+                            )}
                           />
                         </div>
-                        <div className="group-input ">
-                          <input
-                            type="email"
-                            name="contact-email"
-                            id="contactEmail"
-                            placeholder="Email"
-                            ref={emailRef}
+                        <div className="group-input">
+                          <Controller
+                            name={"email"}
+                            control={control}
+                            render={({ field: { onChange, value } }) => (
+                              <input
+                                type="text"
+                                onChange={onChange}
+                                value={value}
+                                name="contact-email"
+                                className={errors.email && "error-field"}
+                                placeholder="Email"
+                              />
+                            )}
                           />
                         </div>
                       </div>
@@ -150,20 +193,23 @@ const ContactSec = () => {
                           <option value="4">Support</option>
                         </select>
                       </div>
-                      <div className="group-input ">
-                        <textarea
-                          name="contact-message"
-                          id="contactMessage"
-                          placeholder="Message"
-                          ref={messageRef}
-                        ></textarea>
+                      <div className="group-input">
+                        <Controller
+                          name={"message"}
+                          control={control}
+                          render={({ field: { onChange, value } }) => (
+                            <textarea
+                              name="contact-message"
+                              className={errors.message && "error-field"}
+                              placeholder="Message"
+                              value={value}
+                              onChange={onChange}
+                            ></textarea>
+                          )}
+                        />
                       </div>
                       <div className="form-cta justify-content-start">
-                        <button
-                          type="button"
-                          className="btn"
-                          onClick={sendMessage}
-                        >
+                        <button type="submit" className="btn">
                           Send Message
                         </button>
                       </div>
