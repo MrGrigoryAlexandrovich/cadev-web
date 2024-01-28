@@ -17,13 +17,8 @@ const ContactSec = () => {
                 <Image src={phone} alt="Image" />
               </div>
               <div className="content">
-                <h4>Phone & Fax</h4>
-                <p>
-                  <Link href="tel:197-90-56-780">Mobile : +197-90-56-780</Link>
-                </p>
-                <p>
-                  <Link href="tel:197-90-56-780">Fax : +44-208-1234567</Link>
-                </p>
+                <h4>Phone </h4>
+                <p>+387/60-339-4022</p>
               </div>
             </div>
           </div>
@@ -35,13 +30,8 @@ const ContactSec = () => {
               <div className="content">
                 <h4>Mail Address</h4>
                 <p>
-                  <Link href="mailto:info.company@gmail.com">
-                    Info.company@gmail.com
-                  </Link>
-                </p>
-                <p>
-                  <Link href="mailto:info.company@gmail.com">
-                    Info.company@yahoo.com
+                  <Link href="mailto:ahmedcvrle@gmail.com">
+                    ahmedcvrle@gmail.com
                   </Link>
                 </p>
               </div>
@@ -56,10 +46,10 @@ const ContactSec = () => {
                 <h4>Our Location</h4>
                 <p>
                   <Link
-                    href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
+                    href="https://www.google.com/maps/place/Maglaj/@44.5442206,18.0749041,14z/data=!3m1!4b1!4m6!3m5!1s0x475e919eb6e2bd8f:0x980dd91ebf7a48e2!8m2!3d44.5454847!4d18.1033619!16zL20vMGQ5OV92?entry=ttu"
                     target="_blank"
                   >
-                    85 Ketch Harbour RoadBensalem, PA 19020
+                    74250 Maglaj Domislica bb
                   </Link>
                 </p>
               </div>
@@ -72,8 +62,7 @@ const ContactSec = () => {
               </div>
               <div className="content">
                 <h4>Office Hour</h4>
-                <p>Sun - Thu 09 am - 06pm</p>
-                <p>Fri - Sat 4 pm - 10pm</p>
+                <p>Mon - Fri 07 am - 03pm</p>
               </div>
             </div>
           </div>
@@ -85,7 +74,7 @@ const ContactSec = () => {
                 <div className="col-12 col-lg-6">
                   <div className="contact__map fade-top">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20342.411046372905!2d-74.16638039276373!3d40.719832743885284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1649562691355!5m2!1sen!2sbd"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22748.643567459574!2d18.0955037!3d44.54422245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475e919eb6e2bd8f%3A0x980dd91ebf7a48e2!2sMaglaj!5e0!3m2!1sbs!2sba!4v1706387324958!5m2!1sbs!2sba"
                       width="100"
                       height="800"
                       allowFullScreen
@@ -97,11 +86,7 @@ const ContactSec = () => {
                 <div className="col-12 col-lg-6">
                   <div className="contact-main__form  fade-top">
                     <h3>Leave A Message</h3>
-                    <form
-                      action="#"
-                      method="post"
-                      className="section__content-cta"
-                    >
+                    <form className="section__content-cta">
                       <div className="group-wrapper">
                         <div className="group-input ">
                           <input
@@ -137,7 +122,7 @@ const ContactSec = () => {
                         ></textarea>
                       </div>
                       <div className="form-cta justify-content-start">
-                        <button type="submit" className="btn">
+                        <button type="button" className="btn">
                           Send Message
                         </button>
                       </div>

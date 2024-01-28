@@ -7,7 +7,7 @@ import mobileDevelopment from "@/assets/mobile-development.jpg";
 import desktopDevelopment from "@/assets/desktop-development.avif";
 import developmentCoaching from "@/assets/development-coaching.jpg";
 import itConsulting from "@/assets/it-consulting.png";
-import maintenance from "@/assets/maintenance.jpg";
+import maintenance from "@/assets/services-maintenance.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 

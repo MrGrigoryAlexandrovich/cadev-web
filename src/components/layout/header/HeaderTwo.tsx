@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "public/images/logo.png";
-import one from "public/images/project/one.png";
-import two from "public/images/project/two.png";
-import three from "public/images/project/three.png";
-import four from "public/images/project/four.png";
+import development from "@/assets/development.jpg";
+import consulting from "@/assets/consulting.jpg";
+import maintenance from "@/assets/maintenance.jpg";
 import avatar from "public/images/avatar.png";
 
 interface HeaderProps {
@@ -375,30 +374,26 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
           <div className="gallery">
             <div className="title menu-nav-link">
               <h2 className="title-xl text-uppercase fw-7">
-                Our Featured Projects
+                {" "}
+                Welcome to CA DEV
               </h2>
             </div>
             <div className="images">
-              <Link className="image-link" href="case-study-single">
+              <a className="image-link">
                 <div className="image" data-label="Development">
-                  <Image src={one} alt="Image" />
+                  <Image src={development} alt="Image" />
                 </div>
-              </Link>
-              <Link className="image-link" href="case-study-single">
-                <div className="image" data-label="Design">
-                  <Image src={two} alt="Image" />
+              </a>
+              <a className="image-link">
+                <div className="image" data-label="IT Consulting">
+                  <Image src={consulting} alt="Image" />
                 </div>
-              </Link>
-              <Link className="image-link" href="case-study-single">
-                <div className="image" data-label="Marketting">
-                  <Image src={three} alt="Image" />
+              </a>
+              <a className="image-link">
+                <div className="image" data-label="Maintenance">
+                  <Image src={maintenance} alt="Image" />
                 </div>
-              </Link>
-              <Link className="image-link" href="case-study-single">
-                <div className="image" data-label="Launch">
-                  <Image src={four} alt="Image" />
-                </div>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
