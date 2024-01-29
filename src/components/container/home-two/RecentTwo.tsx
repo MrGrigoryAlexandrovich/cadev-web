@@ -49,9 +49,10 @@ const RecentTwo = () => {
                     <a>Jobs</a>
                   </h3>
                   <p className="text-quaternary">
-                    Viewing a list of jobs: The jobs page displays a list of all
-                    jobs that are currently open. Users can filter this list by
-                    various criteria, such as job title, location, and industry.
+                    On Karriera Jobs page, you'll find all your jobs in one
+                    place. Manage them effortlessly with diverse tools and
+                    filter them with a range of criteria to find the perfect
+                    fit.
                   </p>
                 </div>
                 <hr />
