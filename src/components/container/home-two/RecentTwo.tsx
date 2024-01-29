@@ -1,8 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import one from "public/images/recent/one.png";
-import two from "public/images/recent/two.png";
+import karrieraJobs from "@/assets/KarrieraJobs.png";
+import karrieraDashboard from "@/assets/KarrieraDashboard.png";
+import karrieraMessenger from "@/assets/KarrieraMessenger.png";
+import osterusDegree from "@/assets/OsterusDegree.png";
+import osterusGeneral from "@/assets/OsterusGeneral.png";
+import karrieraWebsite from "@/assets/KarrieraWebsite.png";
 
 const RecentTwo = () => {
   return (
@@ -12,10 +16,11 @@ const RecentTwo = () => {
           <div className="col-12 col-lg-5">
             <div className="section__content st-con">
               <span className="sub-title text-capitalize">
-                recent completed project
+                Long-term partners
               </span>
               <h2 className="title-xl title-anim">
-                Does More Then Ever Platform To Achieve Goal Stages.
+                Karriera & Osterus
+                <br /> We realize our visions and build software together
               </h2>
               <div className="section__content-cta">
                 <div className="section__content-cta">
@@ -35,109 +40,147 @@ const RecentTwo = () => {
             <div className="recent__thumb st-con">
               <div className="recent__single appear-down">
                 <div className="thumb">
-                  <Link href="service-single">
-                    <Image src={one} alt="Image" />
-                  </Link>
+                  <a>
+                    <Image src={karrieraJobs} alt="Image" />
+                  </a>
                 </div>
                 <div className="content">
                   <h3 className="title-lg text-capitalize">
-                    <Link href="case-study-single">impression</Link>
+                    <a>Jobs</a>
                   </h3>
                   <p className="text-quaternary">
-                    Illo expedita corrupti placeat cupiditate veniam placeat
-                    dolorum libero doloremque. Incidunt cum dolorum dolorem.
-                    Sunt et quod molestiae. Quo sed optio quia ducimus aut sed.
+                    Viewing a list of jobs: The jobs page displays a list of all
+                    jobs that are currently open. Users can filter this list by
+                    various criteria, such as job title, location, and industry.
                   </p>
                 </div>
                 <hr />
                 <div className="content-footer">
                   <div className="content-footer__left">
-                    <Link href="services">Web Application</Link>
-                    <Link href="services">Branding</Link>
-                  </div>
-                  <div className="content-footer__right">
-                    <Link href="/">Visit Website</Link>
+                    <a>Karriera</a>
+                    <a>Jobs</a>
                   </div>
                 </div>
               </div>
               <div className="recent__single appear-down">
                 <div className="thumb">
-                  <Link href="service-single">
-                    <Image src={two} alt="Image" />
-                  </Link>
+                  <a>
+                    <Image src={karrieraDashboard} alt="Image" />
+                  </a>
                 </div>
                 <div className="content">
                   <h3 className="title-lg text-capitalize">
-                    <Link href="case-study-single">sense</Link>
+                    <a>Dashboard</a>
                   </h3>
                   <p className="text-quaternary">
-                    Illo expedita corrupti placeat cupiditate veniam placeat
-                    dolorum libero doloremque. Incidunt cum dolorum dolorem.
-                    Sunt et quod molestiae. Quo sed optio quia ducimus aut sed.‍
+                    Track profile completion, view your latest created jobs in a
+                    list, and connect with the newest applicants, all
+                    conveniently centralized for your professional growth.
                   </p>
                 </div>
                 <hr />
                 <div className="content-footer">
                   <div className="content-footer__left">
-                    <Link href="services">Web Application</Link>
-                    <Link href="services">Branding</Link>
-                  </div>
-                  <div className="content-footer__right">
-                    <Link href="/">Visit Website</Link>
+                    <a>Karriera</a>
+                    <a>Dashboard</a>
                   </div>
                 </div>
               </div>
               <div className="recent__single appear-down">
                 <div className="thumb">
-                  <Link href="service-single">
-                    <Image src={one} alt="Image" />
-                  </Link>
+                  <a>
+                    <Image src={karrieraMessenger} alt="Image" />
+                  </a>
                 </div>
                 <div className="content">
                   <h3 className="title-lg text-capitalize">
-                    <Link href="case-study-single">impression</Link>
+                    <a>Messenger</a>
                   </h3>
                   <p className="text-quaternary">
-                    Illo expedita corrupti placeat cupiditate veniam placeat
-                    dolorum libero doloremque. Incidunt cum dolorum dolorem.
-                    Sunt et quod molestiae. Quo sed optio quia ducimus aut sed.‍
+                    Karriera Messenger facilitates direct communication between
+                    candidates and recruiters, turning job searches into smooth
+                    and seamless interactions while allowing document exchange.
                   </p>
                 </div>
                 <hr />
                 <div className="content-footer">
                   <div className="content-footer__left">
-                    <Link href="services">Web Application</Link>
-                    <Link href="services">Branding</Link>
-                  </div>
-                  <div className="content-footer__right">
-                    <Link href="/">Visit Website</Link>
+                    <a>Karriera</a>
+                    <a>Messenger</a>
                   </div>
                 </div>
               </div>
               <div className="recent__single appear-down">
                 <div className="thumb">
-                  <Link href="service-single">
-                    <Image src={two} alt="Image" />
-                  </Link>
+                  <a>
+                    <Image src={osterusGeneral} alt="Image" />
+                  </a>
                 </div>
                 <div className="content">
                   <h3 className="title-lg text-capitalize">
-                    <Link href="case-study-single">sense</Link>
+                    <a>General</a>
                   </h3>
                   <p className="text-quaternary">
-                    Illo expedita corrupti placeat cupiditate veniam placeat
-                    dolorum libero doloremque. Incidunt cum dolorum dolorem.
-                    Sunt et quod molestiae. Quo sed optio quia ducimus aut sed.‍
+                    Osterus boasts advanced analytics and actionable insights,
+                    inviting a deeper dive: explore their individual analysis
+                    stacks and compare their diverse approaches.
                   </p>
                 </div>
                 <hr />
                 <div className="content-footer">
                   <div className="content-footer__left">
-                    <Link href="services">Web Application</Link>
-                    <Link href="services">Branding</Link>
+                    <a>Osterus</a>
+                    <a>General</a>
                   </div>
-                  <div className="content-footer__right">
-                    <Link href="/">Visit Website</Link>
+                </div>
+              </div>
+              <div className="recent__single appear-down">
+                <div className="thumb">
+                  <a>
+                    <Image src={osterusDegree} alt="Image" />
+                  </a>
+                </div>
+                <div className="content">
+                  <h3 className="title-lg text-capitalize">
+                    <a>Views</a>
+                  </h3>
+                  <p className="text-quaternary">
+                    In the Osterus application, Stack Views and Comparisons are
+                    implemented through various types of views, depending on the
+                    analyst segment. The most popular views are Jobs and
+                    Experience, Education and Demographics.
+                  </p>
+                </div>
+                <hr />
+                <div className="content-footer">
+                  <div className="content-footer__left">
+                    <a>Osterus</a>
+                    <a>Views</a>
+                  </div>
+                </div>
+              </div>
+              <div className="recent__single appear-down">
+                <div className="thumb">
+                  <a>
+                    <Image src={karrieraWebsite} alt="Image" />
+                  </a>
+                </div>
+                <div className="content">
+                  <h3 className="title-lg text-capitalize">
+                    <a>Karriera</a>
+                  </h3>
+                  <p className="text-quaternary">
+                    Unleash boundless opportunities with Karriera! Dive into our
+                    website to uncover your path – explore Karriera's core,
+                    discover diverse services, and unlock perfect pricing for
+                    your success. Your brighter future starts here
+                  </p>
+                </div>
+                <hr />
+                <div className="content-footer">
+                  <div className="content-footer__left">
+                    <a>Karriera</a>
+                    <a>Website</a>
                   </div>
                 </div>
               </div>

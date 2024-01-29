@@ -3,7 +3,7 @@ import Counter from "../Counter";
 
 const CounterTwo = () => {
   return (
-    <section className="counter pt-120 fade-wrapper">
+    <section className="counter pt-60 fade-wrapper">
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -15,9 +15,9 @@ const CounterTwo = () => {
                       <div className="counter__single fade-top">
                         <h2 className="title-xl">
                           <span className="odometer">
-                            <Counter value={15} />
+                            <Counter value={10} />
                           </span>
-                          <span> k+</span>
+                          <span>+</span>
                         </h2>
                         <p className="title-sm text-quaternary">
                           Project complete
@@ -30,7 +30,7 @@ const CounterTwo = () => {
                           <span className="odometer">
                             <Counter value={8} />
                           </span>
-                          <span> k+</span>
+                          <span>+</span>
                         </h2>
                         <p className="title-sm text-quaternary">
                           happy customers
@@ -41,9 +41,9 @@ const CounterTwo = () => {
                       <div className="counter__single fade-top">
                         <h2 className="title-xl">
                           <span className="odometer">
-                            <Counter value={10} />
+                            <Counter value={5} />
                           </span>
-                          <span> +</span>
+                          <span>+</span>
                         </h2>
                         <p className="title-sm text-quaternary">
                           years of experience
@@ -54,9 +54,9 @@ const CounterTwo = () => {
                       <div className="counter__single fade-top">
                         <h2 className="title-xl">
                           <span className="odometer">
-                            <Counter value={20} />
+                            <Counter value={10} />
                           </span>
-                          <span> +</span>
+                          <span>+</span>
                         </h2>
                         <p className="title-sm text-quaternary">
                           award achievement
