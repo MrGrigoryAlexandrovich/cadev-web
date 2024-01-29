@@ -52,7 +52,8 @@ const RecentTwo = () => {
                     On Karriera Jobs page, you'll find all your jobs in one
                     place. Manage them effortlessly with diverse tools and
                     filter them with a range of criteria to find the perfect
-                    fit.
+                    fit. Download your jobs in a CSV file and analyze them
+                    offline
                   </p>
                 </div>
                 <hr />
