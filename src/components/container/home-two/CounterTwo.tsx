@@ -28,7 +28,7 @@ const CounterTwo = () => {
                       <div className="counter__single fade-top">
                         <h2 className="title-xl">
                           <span className="odometer">
-                            <Counter value={8} />
+                            <Counter value={10} />
                           </span>
                           <span>+</span>
                         </h2>
