@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.ca-development.com/
+
+# Sitemaps
+Sitemap: https://www.ca-development.com/sitemap.xml
