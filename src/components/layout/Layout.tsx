@@ -206,10 +206,6 @@ const Layout = ({
   return (
     <Fragment>
       <Head>
-        <meta
-          name="google-site-verification"
-          content="o1wHj_HBxdIVfvF_7EVgLyLkQEGvHm42KWb9aCfth9k"
-        />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
