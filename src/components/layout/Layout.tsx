@@ -223,7 +223,7 @@ const Layout = ({
         <title>Software Development</title>
         <meta
           name="keywords"
-          content="software, development, web, software-development, appliation, mobile, desktop,mobile-development , desktop-development"
+          content="software, development, web, software-development, appliation, mobile, desktop,mobile-development , desktop-development, company, ca, dev, ca-dev, ca-development"
         />
         <meta
           name="description"
