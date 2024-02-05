@@ -206,8 +206,15 @@ const Layout = ({
   return (
     <Fragment>
       <Head>
+        <meta name="robots" content="index,follow" />
+        <meta name="geo.position" content="40.741895,-73.989308" />
+        <meta name="geo.placename" content="Belgrade, Serbia" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:url" content="https://www.ca-development.com" />
+        <meta name="twitter:site" content="@ca_development" />
+        <meta name="twitter:creator" content="@ca_development" />
+        <meta property="og:site_name" content="Software Sorcerers" />
         <link
           rel="shortcut icon"
           href="/images/favicon.png"
@@ -216,11 +223,11 @@ const Layout = ({
         <title>Software Development</title>
         <meta
           name="keywords"
-          content="software, development, web, software-development, appliation, mobile, desktop"
+          content="software, development, web, software-development, appliation, mobile, desktop,mobile-development , desktop-development"
         />
         <meta
           name="description"
-          content="Software Sorcerers: We enchant your digital world."
+          content="Software Sorcerers: We enchant your digital world. Software Development company."
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Software Development" />
