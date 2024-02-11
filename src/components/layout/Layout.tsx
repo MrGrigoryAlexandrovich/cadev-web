@@ -5,15 +5,10 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ScrollProgressBtn from "./ScrollProgressBtn";
 import CustomCursor from "./CustomCursor";
 import Header from "./header/Header";
-import HeaderTwo from "./header/HeaderTwo";
-import HeaderThree from "./header/HeaderThree";
-import HeaderFour from "./header/HeaderFour";
-import HeaderFive from "./header/HeaderFive";
 import Footer from "./footer/Footer";
 import FooterTwo from "./footer/FooterTwo";
 import FooterThree from "./footer/FooterThree";
 import FooterFour from "./footer/FooterFour";
-import FooterFive from "./footer/FooterFive";
 import FooterSix from "./footer/FooterSix";
 import SplitType from "split-type";
 
@@ -269,40 +264,11 @@ const Layout = ({
             setOpenNav={setOpenNav}
           />
         )}
-        {header === 2 && (
-          <HeaderTwo
-            openNav={openNav}
-            handleNav={handleNav}
-            setOpenNav={setOpenNav}
-          />
-        )}
-        {header === 3 && (
-          <HeaderThree
-            openNav={openNav}
-            handleNav={handleNav}
-            setOpenNav={setOpenNav}
-          />
-        )}
-        {header === 4 && (
-          <HeaderFour
-            openNav={openNav}
-            handleNav={handleNav}
-            setOpenNav={setOpenNav}
-          />
-        )}
-        {header === 5 && (
-          <HeaderFive
-            openNav={openNav}
-            handleNav={handleNav}
-            setOpenNav={setOpenNav}
-          />
-        )}
         <main>{children}</main>
         {footer === 1 && <Footer />}
         {footer === 2 && <FooterTwo />}
         {footer === 3 && <FooterThree />}
         {footer === 4 && <FooterFour />}
-        {footer === 5 && <FooterFive />}
         {footer === 6 && <FooterSix />}
         <ScrollProgressBtn />
         <CustomCursor

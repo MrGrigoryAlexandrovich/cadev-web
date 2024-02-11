@@ -13,7 +13,7 @@ const AboutMe = () => {
       title: "Leadership",
       subtitles: [
         "Set clear goals and expectations",
-        "Create a positive and supportive environment",
+        "Positive and supportive environment",
         "Delegate effectively",
         "Be a role mode",
       ],
@@ -32,7 +32,7 @@ const AboutMe = () => {
     {
       title: "IT Consulting",
       subtitles: [
-        "Improved IT performance",
+        "Advanced knowledge",
         "Increased business agility",
         "Reduced costs",
         "Increased innovation",
@@ -43,7 +43,7 @@ const AboutMe = () => {
       title: "Maintenance",
       subtitles: [
         "Enhanced Stability and Reliability",
-        "Improved Performance and Efficiency",
+        "Improved Performance",
         "Enhanced Security",
         "Reduced Development Costs",
       ],

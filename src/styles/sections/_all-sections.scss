@@ -278,50 +278,6 @@
   }
 }
 
-.expertise-alt {
-  .expertise__single {
-    position: relative;
-    z-index: 1;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-    overflow: hidden;
-    background-image: url("../../../public/images/five/seven.png");
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0px;
-      background-color: #0f0f0f;
-      z-index: -1;
-      transition: var(--transition);
-    }
-
-    i {
-      transition: var(--transition);
-    }
-
-    &:hover {
-      &::before {
-        opacity: 0.6;
-      }
-
-      i {
-        color: white !important;
-      }
-    }
-  }
-
-  .expertise__single-active {
-    &::before {
-      opacity: 0.6;
-    }
-
-    i {
-      color: white !important;
-    }
-  }
-}
-
 // (5.6) horizontal text slider styles
 .hr-text {
   .hr-text-wrapper {
@@ -986,45 +942,6 @@
 .language {
   .language__slider {
     margin: -20px 0px;
-  }
-
-  .language__slider-single {
-    max-width: 210px;
-    min-width: 210px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    position: relative;
-    box-shadow: 0px 4px 58px 0px rgba(26, 85, 227, 0.1);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url("../../../public/images/lang-bg.png");
-    z-index: 1;
-    &::before {
-      content: "";
-      position: absolute;
-      inset: -1px;
-      z-index: -1;
-      background: #222;
-      border-radius: inherit;
-      transition: var(--transition);
-    }
-
-    a {
-      text-transform: capitalize;
-      padding: 30px 20px;
-    }
-
-    &:hover {
-      &::before {
-        opacity: 0.5;
-      }
-    }
   }
 
   .language__slider-rtl {
