@@ -230,13 +230,10 @@ const Layout = ({
           property="og:description"
           content="Software Sorcerers: We enchant your digital world."
         />
-        <meta
-          property="og:image"
-          content="https://www.ca-dev.eu/_next/static/media/logo.9ff13fb2.png"
-        />
+        <meta property="og:image" content="https://i.imgur.com/6j3cMIQ.jpeg" />
         <meta
           property="twitter:card"
-          content="https://www.ca-dev.eu/_next/static/media/logo.9ff13fb2.png"
+          content="https://i.imgur.com/6j3cMIQ.jpeg"
         />
         <meta
           property="twitter:title"
@@ -248,12 +245,12 @@ const Layout = ({
         />
         <meta
           property="twitter:image"
-          content="https://www.ca-dev.eu/_next/static/media/logo.9ff13fb2.png"
+          content="https://i.imgur.com/6j3cMIQ.jpeg"
         />
         <meta
           name="image"
           property="og:image"
-          content="https://www.ca-dev.eu/_next/static/media/logo.9ff13fb2.png"
+          content="https://i.imgur.com/6j3cMIQ.jpeg"
         />
       </Head>
       <div className={`${combinedClasses}${openNav ? " body-active" : " "}`}>
