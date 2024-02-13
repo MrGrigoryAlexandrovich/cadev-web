@@ -206,9 +206,9 @@ const Layout = ({
         <meta name="geo.placename" content="Maglaj, Bosnia and Herzegovina" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:url" content="https://www.ca-development.com" />
-        <meta name="twitter:site" content="@ca_development" />
-        <meta name="twitter:creator" content="@ca_development" />
+        <meta property="og:url" content="https://www.ca-dev.eu" />
+        <meta name="twitter:site" content="@ca_dev" />
+        <meta name="twitter:creator" content="@ca_dev" />
         <meta property="og:site_name" content="Software Sorcerers" />
         <link
           rel="shortcut icon"
@@ -232,11 +232,11 @@ const Layout = ({
         />
         <meta
           property="og:image"
-          content="https://www.ca-development.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.fb895247.png&w=2048&q=75"
+          content="https://www.ca-dev.eu/_next/static/media/logo.9ff13fb2.png"
         />
         <meta
           property="twitter:card"
-          content="https://www.ca-development.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.fb895247.png&w=2048&q=75"
+          content="https://www.ca-dev.eu/_next/static/media/logo.9ff13fb2.png"
         />
         <meta
           property="twitter:title"
@@ -248,12 +248,12 @@ const Layout = ({
         />
         <meta
           property="twitter:image"
-          content="https://www.ca-development.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.fb895247.png&w=2048&q=75"
+          content="https://www.ca-dev.eu/_next/static/media/logo.9ff13fb2.png"
         />
         <meta
           name="image"
           property="og:image"
-          content="https://www.ca-development.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.fb895247.png&w=2048&q=75"
+          content="https://www.ca-dev.eu/_next/static/media/logo.9ff13fb2.png"
         />
       </Head>
       <div className={`${combinedClasses}${openNav ? " body-active" : " "}`}>
