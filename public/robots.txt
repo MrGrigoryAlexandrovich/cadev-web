@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.ca-development.com/
+Host: https://www.ca-dev.eu/
 
 # Sitemaps
-Sitemap: https://www.ca-development.com/sitemap.xml
+Sitemap: https://www.ca-dev.eu/sitemap.xml
